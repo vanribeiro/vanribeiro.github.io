@@ -1,0 +1,46 @@
+body{
+    background: #f9f9f9;
+}
+
+/*Menu*/
+header{
+    background: #800080;
+}
+
+nav{
+    font-family: "Helvetica", sans-serif;
+    font-size: 1em;
+}
+
+nav li{
+    display: inline;
+    padding-left: 10px;
+    padding-right: 10px
+}
+
+nav a{
+    color: #f9f9f9;
+    text-decoration: none;
+}
+
+nav a:hover{
+    text-decoration: none;
+    border-top: 1px solid #ffff00;
+    color: #ffff00;
+}
+
+/*
+section{
+    height: 370px;
+    width: 500px;
+    background: #f2f2f2;
+}
+
+
+article{
+    display: inline;
+}
+
+article img{
+   max-width: 100%;
+}*/
