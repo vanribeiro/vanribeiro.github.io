@@ -1,0 +1,32 @@
+#Caixa{
+    width: 95vw;
+    height: 95vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.Aviso{
+    background-color: #800080;
+    color: #f9f9f9;
+    font-family: sans-serif, "Arial";
+    padding: 15px;
+    line-height: 1.5em;
+    border: 1px solid #f9f9f9;
+    width: 300px;
+    height: 150px;
+}
+
+.Aviso h1{
+    font-size: 1.5em;
+    font-weight: bold;
+    border-bottom: 3px dotted #f9f9f9;
+}
+
+.Aviso h2{
+    font-size: 1em;
+    font-weight: bold;
+}
+
