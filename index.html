@@ -12,23 +12,77 @@
     
     <body>
 <!--CABEÇALHO--------------------------------------------------------------------------------------->
-        <header>
-            
+        <header id="menu">
+            <nav>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="#portifolio">PORTIFÓLIO</a></li>
+                    <li><a href="#minhaBio">VAN RIBEIRO</a></li>
+                    <li><a href="#meuContato">CONTATO</a></li>
+                </ul>
+            </nav>
         </header>
+
+<!--BIOGRAFIA------------------------------------------------------------------------------------>
+        <main>
+            <div id="biografia">
+                <div class="circulo">
+                    <img src="imagens/foto_de_perfil/Eu.jpg" />
+                </div>
+
+                <div id="textoBio">
+                    <h1 id="minhaBio">Van Ribeiro</h1>
+                    <p>Uma programadora Java Web em construção.</p>
+                    <p>Também leitora, blogueira, quando está inspirada, e futura escritora.</p>
+                </div>
+            </div>
 <!--AVISO------------------------------------------------------------------------------------------->
         <div id="Caixa">
+            <input type="checkbox" id="fechar">
+            <label id="icone" for="fechar"><img src="imagens/fechar.png"/></label>
+            
             <div class="Aviso">
                 <h1>Van Ribeiro</h1>
-                <h2>Site em Construção!</h2>
-                <h3>Última atualização: 31/07/2018.</h3>
-                <p>Sempre que houver uma nova mudança, a data será atualizada!</p>
-                <p>Desculpe! Aos poucos estará completo!</p>
+                <h2>Atualização!</h2>
+                <h3>Última atualização: 02/08/2018.</h3>
+                <p>Hoje coloquei menu e foto! É um portifólio provisório, ainda não é quero fazer! Tenho outros planos para ele!</p>
             </div>
         </div>
-<!--OUTRAS-PARTES---------------------------------------------------------------------------------->
+
+<!--PORTIFÓLIO------------------------------------------------------------------------------------>         
+            <!--
+            <div class="portfolio">
+                <h1>PORTIFÍLIO</h1>
+                <section>
+                    <article>
+                        <header>
+                            <img src="imagens/codigos.jpg" />
+                            <h1 id="portifolio">Meu primeiro projeto publicado!</h1>
+                        </header>
+                    </article>
+                </section>
+            </div>-->
+            
+<!--CONTATO---------------------------------------------------------------------------------------->       
+            <!--
+            <div class="contato">
+                <h1 id="meuContato">CONTATO</h1>
+                <section>
+                    <article>
+                        <header>
+                            <h2>Entre em contato comigo:</h2>
+                            <p>vanribeiro.dev@gmail.com</p>
+                        </header>
+                    </article>
+                    <article class="redesSociais">
+                        <header>
+                            <h2>Redes Sociais</h2>
+                        </header>
+                    </article>
+                </section>
+            </div>-->
         
-        
-        
+        </main>
 <!--RODAPÉ----------------------------------------------------------------------------------------->
         <footer>
             © 2018 Van Ribeiro. Todos os direitos reservados. Desenvolvido por Vanessa Ribeiro.
