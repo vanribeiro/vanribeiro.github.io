@@ -1,5 +1,235 @@
 body{
     background: #1a1a1a;
+    color: #f2f2f2;
+    font-family: "Georgia", sans-serif;
+}
+
+/*--MENU MOBILE--------------------*/
+#menu{
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+#menu nav{
+    background: #800080;
+    font-family: "Arial", sans-serif;
+    text-align: center;
+}
+
+#menu ul li{
+    display: block;
+    color: #f2f2f2;
+    padding: 15px;
+}
+
+#menu a{
+    text-decoration: none;
+    padding: 15px;
+}
+
+#menu a:visited{
+    color: inherit;
+}
+
+#menu a:hover{
+    color: #800080;
+}
+
+#menu li:hover{
+    background: #f2f2f2;
+    color: #800080;
+    padding: 15px;
+}
+
+/*--BIO*/
+
+#biografia{
+    height: 400px;
+    padding-top: 200px;
+    padding-bottom: 100px; 
+}
+
+.circulo{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    margin: auto;
+}
+
+.circulo img{
+    max-width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+    
+#textoBio{
+    padding: 40px;
+    text-align: center;
+    line-height: normal;
+}
+    
+#textoBio h1{
+    padding-bottom: 10px;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/*--Tablet----------------------------------------------------------------------------------------------*/
+
+@media only screen and (min-width: 768px){
+    #menu nav{
+        background: #800080;
+        font-family: "Arial", sans-serif;
+        text-align: center;
+    }
+
+    #menu ul li{
+        display: inline;
+        color: #f2f2f2;
+        padding: 15px;
+    }
+
+    #menu a{
+        text-decoration: none;
+        padding: 15px;
+    }
+
+    #menu a:visited{
+        color: #f2f2f2;
+    }
+
+    #menu a:hover{
+        background: #f2f2f2;
+        color: #800080;
+        padding: 15px;
+        border-radius: 3%;
+    }
+    
+    #biografia{
+        height: 300px;
+        width: 100%;
+    }
+
+    .circulo{
+        width: 150px;
+        height: 150px;
+    }
+    
+    .circulo img{
+        max-width: 100%;
+    }
+    
+    #biografia{
+        height: 400px;
+        padding-top: 100px;
+        padding-bottom: 100px;        
+    }
+
+    .circulo{
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        overflow: hidden;
+        position: relative;
+        margin: auto;
+    }
+    
+    .circulo img{
+        max-width: 100%;
+        position: absolute;
+        bottom: 0;
+    }
+    
+    #textoBio{
+        padding: 40px;
+        text-align: center;
+        line-height: normal;
+    }
+    
+    #textoBio h1{
+        padding-bottom: 10px;
+        font-size: 1.5em;
+        font-weight: bold;
+    }
+
+}
+/*--Desktop---------------------------------------------------------------------------------------------*/
+
+/*desktop*/
+@media only screen and (min-width: 600px){
+    #menu{
+        position: fixed;
+        width: 100%;
+        z-index: 1;
+        margin-bottom: 200px;
+    }
+    
+    #menu nav{
+        background: #800080;
+        font-family: "Arial", sans-serif;
+        text-align: center;
+        height: 10px;
+        padding: 25px;
+    }
+
+    #menu ul li{
+        display: inline;
+        color: #f2f2f2;
+        padding: 15px;
+    }
+
+    #menu a{
+        text-decoration: none;
+        padding: 15px;
+    }
+
+    #menu a:visited{
+        color: #f2f2f2;
+    }
+
+    #menu a:hover{
+        background: #f2f2f2;
+        color: #800080;
+        padding: 15px;
+        border-radius: 3%;
+    }
+    
+    #biografia{
+        height: 400px;
+        padding-top: 100px;
+        padding-bottom: 100px;        
+    }
+
+    .circulo{
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        overflow: hidden;
+        position: relative;
+        margin: auto;
+    }
+    
+    .circulo img{
+        max-width: 100%;
+        position: absolute;
+        bottom: 0;
+    }
+    
+    #textoBio{
+        padding: 40px;
+        text-align: center;
+        line-height: normal;
+    }
+    
+    #textoBio h1{
+        padding-bottom: 10px;
+        font-size: 1.5em;
+        font-weight: bold;
+    }
+
 }
 
 footer{
@@ -7,4 +237,6 @@ footer{
     font-family: "Georgia", serif;
     color: #f2f2f2;
     font-size: 1em;
+    background-color: #800080;
+    text-align: center;
 }
