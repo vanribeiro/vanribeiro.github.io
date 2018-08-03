@@ -26,10 +26,11 @@ body{
 #menu a{
     text-decoration: none;
     padding: 15px;
+    color: #f2f2f2;
 }
 
 #menu a:visited{
-    color: inherit;
+    color: #f2f2f2;
 }
 
 #menu a:hover{
@@ -95,6 +96,7 @@ body{
     #menu a{
         text-decoration: none;
         padding: 15px;
+        color: #f2f2f2;
     }
 
     #menu a:visited{
@@ -184,6 +186,7 @@ body{
     #menu a{
         text-decoration: none;
         padding: 15px;
+        color: #f2f2f2;
     }
 
     #menu a:visited{
