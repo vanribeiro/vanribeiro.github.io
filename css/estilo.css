@@ -11,10 +11,32 @@ body{
     z-index: 1;
 }
 
+#iconeMenu{
+    cursor: pointer;
+    z-index: 200;
+}
+
+#menuR{
+        display: none;
+    }
+
+#menu img{
+    width: 30px;
+    height: 30px;
+    float: right;
+}
+
+#menu ul li:nth-child(1){
+    height: 30px;
+    background-color: #800080;
+}
+
 #menu nav{
     background: #800080;
     font-family: "Arial", sans-serif;
     text-align: center;
+    transition: all .2s linear;
+    top: 300px;
 }
 
 #menu ul li{
@@ -41,6 +63,18 @@ body{
     background: #f2f2f2;
     color: #800080;
     padding: 15px;
+}
+
+#menu li:visited{
+    color: #800080;
+}
+
+#menuR:checked ~ nav{
+    transform: translateY(-300px);
+}
+
+#menuR:checked ~ nav a .link{
+    transition-delay: .2s;
 }
 
 /*--BIO*/
@@ -85,6 +119,14 @@ body{
         background: #800080;
         font-family: "Arial", sans-serif;
         text-align: center;
+    }
+    
+    #menuR{
+        display: none;
+    }
+    
+    #menu img{
+        display: none;
     }
 
     #menu ul li{
@@ -167,6 +209,14 @@ body{
         width: 100%;
         z-index: 1;
         margin-bottom: 200px;
+    }
+    
+    #menuR {
+        display: none;
+    }
+    
+    #menu img{
+        display: none;
     }
     
     #menu nav{
