@@ -2,6 +2,16 @@
 
 <html>
     <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-123404718-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-123404718-1');
+        </script>
+
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
         <link rel="shortcut icon" href="imagens/borboleta.png" type="image/x-icon" />
@@ -15,11 +25,15 @@
 <!--CABEÇALHO--------------------------------------------------------------------------------------->
         <header id="menu">
             <nav>
-                <ul>
-                    <li><a href="index.html">INÍCIO</a></li>
-                    <li><a href="#portifolio">PORTIFÓLIO</a></li>
-                    <li><a href="#minhaBio">VAN RIBEIRO</a></li>
-                    <li><a href="#meuContato">CONTATO</a></li>
+                <ul><!--
+                    <li>
+                        <input type="checkbox" id="menuR">
+                        <label id="iconeMenu" id="menuR"><img src="imagens/icones/menu.png" /></label>
+                    </li>-->
+                    <li><a class="link" href="index.html">INÍCIO</a></li>
+                    <li><a class="link" href="#portifolio">PORTIFÓLIO</a></li>
+                    <li><a class="link" href="#minhaBio">VAN RIBEIRO</a></li>
+                    <li><a class="link" href="#meuContato">CONTATO</a></li>
                 </ul>
             </nav>
         </header>
