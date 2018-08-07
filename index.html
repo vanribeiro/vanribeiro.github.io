@@ -14,30 +14,56 @@
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-        <link rel="shortcut icon" href="imagens/borboleta.png" type="image/x-icon" />
+        <link rel="shortcut icon" href="imagens/favicon/borboleta.png" type="image/x-icon" />
         <link rel="stylesheet" type="text/css" href="css/reset.css" />
         <link rel="stylesheet" type="text/css" href="css/estilo.css" />
-        <link rel="stylesheet" type="text/css" href="css/aviso.css" />
         <title>Van Ribeiro</title>
     </head>
     
     <body>
 <!--CABEÇALHO--------------------------------------------------------------------------------------->
-        <header id="menu">
-            <nav>
-                <ul><!--
-                    <li>
-                        <input type="checkbox" id="menuR">
-                        <label id="iconeMenu" id="menuR"><img src="imagens/icones/menu.png" /></label>
-                    </li>-->
-                    <li><a class="link" href="index.html">INÍCIO</a></li>
-                    <li><a class="link" href="#portifolio">PORTIFÓLIO</a></li>
-                    <li><a class="link" href="#minhaBio">VAN RIBEIRO</a></li>
-                    <li><a class="link" href="#meuContato">CONTATO</a></li>
-                </ul>
-            </nav>
+        
+        <!--Barra-do-Top---------------------->
+        <header class="menu">
+        <div id="barraTopo">
+            <!--Logo------------------------------->
+            <div class="logo">
+                <a href="index.html"><img src="imagens/logo/logoBranco.png" /></a>
+            </div>
+        </div>
+            <!--Icone-do-Menu---------------------->
+            <!--
+            <div id="menuResponsivo">
+                <input type="checkbox" id="menuR">
+                <label id="iconeMenu" for="menuR"><img src="imagens/icones/menu.png" /></label>
+            </div>
+             -->
+                <nav>
+                    <ul>
+                        <li><a class="link" href="index.html">INÍCIO</a></li>
+                        <!--<li><a class="link" href="#portifolio">PORTIFÓLIO</a></li>-->
+                        <li><a class="link" href="#biografia">VAN RIBEIRO</a></li>
+                        <li><a class="link" href="#meuContato">CONTATO</a></li>
+                    </ul>
+                </nav>
+            <ul class="redesS">
+                                <li>
+                                    <a href="https://github.com/vanribeiro"><img src="imagens/icones/RedesSociais/github.png" /></a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/vanribeiro.dev/"><img src="imagens/icones/RedesSociais/instagram.png" /></a>
+                                </li>
+                                <li>
+                                    <a href="https://twitter.com/euvanribeiro"><img src="imagens/icones/RedesSociais/twitter.png" /></a>
+                                </li>
+                                <li>
+                                    <a href="https://www.linkedin.com/in/vanribeiro/"><img src="imagens/icones/RedesSociais/linkedin.png" /></a>
+                                </li>
+                            </ul>
         </header>
-
+            
+<!--AVISO------------------------------------------------------------------------------------------->
+               
 <!--BIOGRAFIA------------------------------------------------------------------------------------>
         <main>
             <div id="biografia">
@@ -46,24 +72,12 @@
                 </div>
 
                 <div id="textoBio">
-                    <h1 id="minhaBio">Van Ribeiro</h1>
+                    <h1>Van Ribeiro</h1>
                     <p>Uma programadora Java Web em construção.</p>
                     <p>Também leitora, blogueira, quando está inspirada, e futura escritora.</p>
+                    <p>Sim! Esse site está em construção e mostra que tenho muito o que aprender ainda.</p>
                 </div>
             </div>
-<!--AVISO------------------------------------------------------------------------------------------->
-        <div id="Caixa">
-            <input type="checkbox" id="fechar">
-            <label id="icone" for="fechar"><img src="imagens/icones/couple_arrow.png"/></label>
-            
-            <div class="Aviso">
-                <h1>Van Ribeiro</h1>
-                <h2>Atualização!</h2>
-                <h3>Última atualização: 02/08/2018.</h3>
-                <p>Hoje coloquei menu e foto! É um portifólio provisório, ainda não é quero fazer! Tenho outros planos para ele!</p>
-            </div>
-        </div>
-
 <!--PORTIFÓLIO------------------------------------------------------------------------------------>         
             <!--
             <div class="portfolio">
@@ -77,30 +91,44 @@
                     </article>
                 </section>
             </div>-->
-            
-<!--CONTATO---------------------------------------------------------------------------------------->       
-            <!--
-            <div class="contato">
-                <h1 id="meuContato">CONTATO</h1>
-                <section>
-                    <article>
-                        <header>
-                            <h2>Entre em contato comigo:</h2>
-                            <p>vanribeiro.dev@gmail.com</p>
-                        </header>
-                    </article>
-                    <article class="redesSociais">
-                        <header>
-                            <h2>Redes Sociais</h2>
-                        </header>
-                    </article>
-                </section>
-            </div>-->
-        
         </main>
-<!--RODAPÉ----------------------------------------------------------------------------------------->
+<!--RODAPÉ--CONTATO-------------------------------------------------------------------------------->
         <footer>
-            © 2018 Van Ribeiro. Todos os direitos reservados. Desenvolvido por Vanessa Ribeiro.
+            <div id="rodape">
+                
+                <section class="contato">
+                    <div id="meuContato">
+                        <article class="redesSociais">
+                            <h1>ENCONTRE-ME!</h1>
+                            <ul>
+                                <li>
+                                    <a href="https://github.com/vanribeiro"><img src="imagens/icones/RedesSociais/github.png" /></a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/vanribeiro.dev/"><img src="imagens/icones/RedesSociais/instagram.png" /></a>
+                                </li>
+                                <li>
+                                    <a href="https://twitter.com/euvanribeiro"><img src="imagens/icones/RedesSociais/twitter.png" /></a>
+                                </li>
+                                <li>
+                                    <a href="https://www.linkedin.com/in/vanribeiro/"><img src="imagens/icones/RedesSociais/linkedin.png" /></a>
+                                </li>
+                                <li><p>
+                                        <img class="imgEmail" src="imagens/icones/RedesSociais/envelope.png" />
+                                        vanribeiro.dev@gmail.com
+                                    </p>
+                                </li>
+                            </ul>
+                        </article>
+                        <article class="direitosAutorais">
+                            <p>© 2018 Van Ribeiro. Todos os direitos reservados.</p>
+                            <p>Desenvolvido por Vanessa Ribeiro.</p>
+                        </article>
+                        
+                    </div>
+                </section>
+            </div>
+            
         </footer>
 <!------------------------------------------------------------------------------------------------->
     </body>
