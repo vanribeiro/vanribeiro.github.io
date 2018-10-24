@@ -15,70 +15,72 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
         <link rel="shortcut icon" href="imagens/favicon/borboleta.png" type="image/x-icon" />
-        <link rel="stylesheet" type="text/css" href="css/reset.css" />
         <link rel="stylesheet" type="text/css" href="css/estilo.css" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
         <title>Van Ribeiro</title>
     </head>
     
-    <body>
-<!--CABEÇALHO--------------------------------------------------------------------------------------->
-        
-        <!--Barra-do-Top---------------------->
-        <header class="menu">
-        <div id="barraTopo">
-            <!--Logo------------------------------->
-            <div class="logo">
-                <a href="index.html"><img src="imagens/logo/logoBranco.png" /></a>
-            </div>
-        </div>
-            <!--Icone-do-Menu---------------------->
-            <!--
-            <div id="menuResponsivo">
-                <input type="checkbox" id="menuR">
-                <label id="iconeMenu" for="menuR"><img src="imagens/icones/menu.png" /></label>
-            </div>
-             -->
-                <nav>
+    <body class="text-white" style="background-color: #800080">
+<!--CABEÇALHO--------------------------------------------------------------------------------->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #800080">
+      <a class="navbar-brand" href="#"><a href="index.html"><img src="imagens/logo/logoBranco.png" /></a></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>    
+       <div class="container">
+          <div class="collapse navbar-collapse justify-content-center" id="navbarNav">        
+            <ul class="navbar-nav">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="index.html">HOME<span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#myBio">VAN RIBEIRO</a>
+                  </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#technologies">TECNOLOGIAS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#portifolio">PORTIFÓLIO</a>
+                </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contactMe">ENCONTRE-ME</a>
+                </li>
+                </ul>
+              </div>
+               <div id="socialmidia" class="justify-content-center">       
                     <ul>
-                        <li><a class="link" href="index.html">INÍCIO</a></li>
-                        <!--<li><a class="link" href="#portifolio">PORTIFÓLIO</a></li>-->
-                        <li><a class="link" href="#biografia">VAN RIBEIRO</a></li>
-                        <li><a class="link" href="#meuContato">CONTATO</a></li>
-                    </ul>
-                </nav>
-            <ul class="redesS">
-                                <li>
-                                    <a href="https://github.com/vanribeiro"><img src="imagens/icones/RedesSociais/github.png" /></a>
-                                </li>
-                                <li>
-                                    <a href="https://www.instagram.com/vanribeiro.dev/"><img src="imagens/icones/RedesSociais/instagram.png" /></a>
-                                </li>
-                                <li>
-                                    <a href="https://twitter.com/euvanribeiro"><img src="imagens/icones/RedesSociais/twitter.png" /></a>
-                                </li>
-                                <li>
-                                    <a href="https://www.linkedin.com/in/vanribeiro/"><img src="imagens/icones/RedesSociais/linkedin.png" /></a>
-                                </li>
-                            </ul>
-        </header>
-            
-<!--AVISO------------------------------------------------------------------------------------------->
-               
-<!--BIOGRAFIA------------------------------------------------------------------------------------>
-        <main>
-            <div id="biografia">
-                <div class="circulo">
-                    <img src="imagens/foto_de_perfil/Eu.jpg" />
+                        <li>
+                            <a href="https://github.com/vanribeiro"><img src="imagens/icones/RedesSociais/github.png"/></a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/vanribeiro.dev/"><img src="imagens/icones/RedesSociais/instagram.png" /></a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/euvanribeiro"><img src="imagens/icones/RedesSociais/twitter.png" /></a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/vanribeiro/"><img src="imagens/icones/RedesSociais/linkedin.png" /></a>
+                        </li>
+                        </ul>
                 </div>
-
-                <div id="textoBio">
+            </div>
+    </nav>
+       
+<!--BIOGRAFIA--------------------------------------------------------------------------------->
+        <main>
+            <div class="container">
+                <div class="row" id="myBio" align="center">
+                <div class="col-sm-12">
+                    <img src="imagens/foto_de_perfil/Eu_300x300.png" class="img-fluid rounded-circle"/>
                     <h1>Van Ribeiro</h1>
                     <p>Uma programadora Java Web em construção.</p>
                     <p>Também leitora, blogueira, quando está inspirada, e futura escritora.</p>
                     <p>Sim! Esse site está em construção e mostra que tenho muito o que aprender ainda.</p>
                 </div>
             </div>
-<!--PORTIFÓLIO------------------------------------------------------------------------------------>         
+            </div>
+            
+<!--PORTIFÓLIO-------------------------------------------------------------------------------->         
             <!--
             <div class="portfolio">
                 <h1>PORTIFÍLIO</h1>
@@ -92,45 +94,44 @@
                 </section>
             </div>-->
         </main>
-<!--RODAPÉ--CONTATO-------------------------------------------------------------------------------->
-        <footer>
-            <div id="rodape">
-                
-                <section class="contato">
-                    <div id="meuContato">
-                        <article class="redesSociais">
-                            <h1>ENCONTRE-ME!</h1>
-                            <ul>
-                                <li>
-                                    <a href="https://github.com/vanribeiro"><img src="imagens/icones/RedesSociais/github.png" /></a>
-                                </li>
-                                <li>
-                                    <a href="https://www.instagram.com/vanribeiro.dev/"><img src="imagens/icones/RedesSociais/instagram.png" /></a>
-                                </li>
-                                <li>
-                                    <a href="https://twitter.com/euvanribeiro"><img src="imagens/icones/RedesSociais/twitter.png" /></a>
-                                </li>
-                                <li>
-                                    <a href="https://www.linkedin.com/in/vanribeiro/"><img src="imagens/icones/RedesSociais/linkedin.png" /></a>
-                                </li>
-                                <li><p>
-                                        <img class="imgEmail" src="imagens/icones/RedesSociais/envelope.png" />
-                                        vanribeiro.dev@gmail.com
-                                    </p>
-                                </li>
-                            </ul>
-                        </article>
-                        <article class="direitosAutorais">
+<!--RODAPÉ--CONTATO--------------------------------------------------------------------------->
+        <footer class="pt-4 my-md-5 pt-md-5">
+            <div class="container">
+            <h1 align="center">ENCONTRE-ME!</h1>
+            <div class="row" id="contactMe" align="center">
+                <div class="col">       
+                    <ul>
+                        <li>
+                            <a href="https://github.com/vanribeiro"><img src="imagens/icones/RedesSociais/github.png"/></a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/vanribeiro.dev/"><img src="imagens/icones/RedesSociais/instagram.png" /></a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/euvanribeiro"><img src="imagens/icones/RedesSociais/twitter.png" /></a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/vanribeiro/"><img src="imagens/icones/RedesSociais/linkedin.png" /></a>
+                        </li>
+                        <li>
+                            <p>
+                                <img class="imgEmail"   src="imagens/icones/RedesSociais/envelope.png" />
+                                vanribeiro.dev@gmail.com
+                            </p>
+                        </li>
+                        <li>
                             <p>© 2018 Van Ribeiro. Todos os direitos reservados.</p>
                             <p>Desenvolvido por Vanessa Ribeiro.</p>
-                        </article>
-                        
-                    </div>
-                </section>
+                        </li>
+                    </ul>
+                </div>  
+                </div>
             </div>
-            
         </footer>
-<!------------------------------------------------------------------------------------------------->
+<!----jQuery-------------------------------------------------------------------------------->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     </body>
     
 </html>
