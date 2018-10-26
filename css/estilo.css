@@ -3,7 +3,7 @@ body a{
 }
 
 body a:hover{
-    color: #fafafa;
+    color: #212529;
 }
 
 main{
@@ -20,6 +20,10 @@ main{
 #socialmidia ul li{
     display: inline;
     list-style: none;
+}
+
+footer .container{
+    
 }
 
 main, footer{
@@ -41,6 +45,7 @@ footer h1{
 }
 
 #portfolio h1, #myArticles h1, #technologies h1{
+    color: #212529;
     padding-top: 15px;
     padding-bottom: 15px;
 }
@@ -53,5 +58,6 @@ footer h1{
     #socialmidia ul li{
         display: none;
     }
+    
 }
 
