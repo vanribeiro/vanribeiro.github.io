@@ -7,7 +7,6 @@ body a:hover{
 }
 
 main{
-    /*background-color: #1a1a1a;*/
     padding-bottom: 50px;
     padding-top: 150px;
 }
@@ -22,12 +21,12 @@ main{
     list-style: none;
 }
 
-footer .container{
-    
-}
-
 main, footer{
     font-family: "Verdana",sans-serif;
+}
+
+footer .copyritght{
+    line-height: 5px;
 }
 
 footer h1{
@@ -50,6 +49,10 @@ footer h1{
     padding-bottom: 15px;
 }
 
+main figcaption{
+    padding-top: 30px;
+}
+
 #technologies p{
     display: inline;
 }
@@ -59,5 +62,8 @@ footer h1{
         display: none;
     }
     
+    footer .copyritght{
+        line-height: normal;
+    }
 }
 
