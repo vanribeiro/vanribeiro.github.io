@@ -11,6 +11,10 @@ main{
     padding-top: 150px;
 }
 
+main h4{
+    padding-top: 15px;
+}
+
 #socialmidia img, #contactMe img{
     width: 32px;
     height: 32px;
