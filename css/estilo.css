@@ -32,6 +32,18 @@ footer h1{
     padding-bottom: 15px;
 }
 
+main a{
+    color: #800080;
+}
+
+main a:hover{
+    color: #fafafa;
+}
+
+#technologies p{
+    display: inline;
+}
+
 @media (max-width: 992px) { 
     #socialmidia ul li{
         display: none;
