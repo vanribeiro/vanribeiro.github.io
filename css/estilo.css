@@ -32,11 +32,11 @@ footer h1{
     padding-bottom: 15px;
 }
 
-main a{
+body a{
     color: #800080;
 }
 
-main a:hover{
+body a:hover{
     color: #fafafa;
 }
 
