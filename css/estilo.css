@@ -1,5 +1,13 @@
+body a{
+    color: #800080;
+}
+
+body a:hover{
+    color: #fafafa;
+}
+
 main{
-    background-color: #1a1a1a;
+    /*background-color: #1a1a1a;*/
     padding-bottom: 50px;
     padding-top: 150px;
 }
@@ -12,6 +20,10 @@ main{
 #socialmidia ul li{
     display: inline;
     list-style: none;
+}
+
+main, footer{
+    font-family: "Verdana",sans-serif;
 }
 
 footer h1{
@@ -31,14 +43,6 @@ footer h1{
 #portfolio h1, #myArticles h1, #technologies h1{
     padding-top: 15px;
     padding-bottom: 15px;
-}
-
-body a{
-    color: #800080;
-}
-
-body a:hover{
-    color: #fafafa;
 }
 
 #technologies p{
