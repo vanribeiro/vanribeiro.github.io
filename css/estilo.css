@@ -70,6 +70,12 @@ main figcaption{
     display: inline;
 }
 
+@media (min-width: 993px) { 
+    .navarrow{
+        display: none;
+    }
+}
+
 @media (max-width: 992px) { 
     #socialmidia ul li{
         display: none;
@@ -81,6 +87,11 @@ main figcaption{
     
     .arrow{
         display: none;
+    }
+    
+    .navarrow img{
+        height: 40px;
+        width: 40px;
     }
     
     #portfolio, #myArticles, #technologies{
