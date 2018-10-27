@@ -46,6 +46,11 @@ footer h1{
     display: inline;
 }
 
+.arrow img{
+    height: 40px;
+    width: 40px;
+}
+
 #portfolio, #myArticles, #technologies{
     padding-top: 15px;
     padding-bottom: 15px;
@@ -72,6 +77,10 @@ main figcaption{
     
     footer .copyritght{
         line-height: normal;
+    }
+    
+    .arrow{
+        display: none;
     }
 }
 
