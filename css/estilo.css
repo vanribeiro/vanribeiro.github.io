@@ -12,11 +12,15 @@ body a:hover{
 
 main{
     padding-bottom: 50px;
-    padding-top: 30px;
 }
 
 main h4{
     padding-top: 15px;
+}
+
+main .container{
+    margin-top: 10px;
+    margin-bottom: 50px;
 }
 
 #socialmidia img, #contactMe img{
@@ -31,6 +35,10 @@ main h4{
 
 main, footer{
     font-family: "Verdana",sans-serif;
+}
+
+footer{
+    padding-bottom: 30px;
 }
 
 footer .copyritght{
@@ -56,10 +64,10 @@ footer h1{
     padding-bottom: 15px;
 }
 
-#portfolio h1, #myArticles h1, #technologies h1{
+#myBio h1, #portfolio h1, #myArticles h1, #technologies h1{
     color: #212529;
     padding-top: 15px;
-    padding-bottom: 15px;
+    padding-bottom: 20px;
 }
 
 main figcaption{
@@ -76,9 +84,14 @@ main figcaption{
     }
 }
 
-@media (max-width: 992px) { 
+@media (max-width: 992px) {
     #socialmidia ul li{
         display: none;
+    }
+    
+    #myBio img{
+        width: 220px;
+        height: 220px;
     }
     
     footer .copyritght{
