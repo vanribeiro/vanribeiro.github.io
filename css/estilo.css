@@ -67,7 +67,15 @@ footer h1{
 #myBio h1, #portfolio h1, #myArticles h1, #technologies h1{
     color: #212529;
     padding-top: 15px;
-    padding-bottom: 20px;
+}
+
+.mySubtitle{
+    color: #212529;
+    padding-bottom: 15px;
+}
+
+#technologies .row{
+    padding-top: 30px;   
 }
 
 main figcaption{
