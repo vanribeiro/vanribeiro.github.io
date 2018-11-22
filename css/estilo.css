@@ -90,6 +90,11 @@ main figcaption{
     .navarrow{
         display: none;
     }
+
+    figure{
+        padding: 5px;
+        border: 1px #b3b4b4;
+    }
 }
 
 @media (max-width: 992px) {
@@ -119,4 +124,3 @@ main figcaption{
         border-top: 1px solid #dee2e6;
     }
 }
-
