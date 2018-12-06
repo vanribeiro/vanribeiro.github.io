@@ -23,6 +23,61 @@ main .container{
     margin-bottom: 50px;
 }
 
+.text-on-center{
+    text-align: center;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.purple-border-strong{
+    border-top: #800080 2px solid;
+}
+
+.purple-border-light{
+    border-top: #80008077 1px solid;
+    padding-top: 10px;
+}
+
+.examples-code-page-backend span{
+    padding: 10px;
+}
+
+.examples-code-pages-frontend{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.examples-code-page-backend img, .examples-code-pages-frontend img{
+    width: 40px;
+    height: 40px;
+}
+
+.highlight-text{
+    padding: 10px;
+    background: #800080;
+    color: #fefefe;
+    word-wrap: break-word;
+}
+
+.highlight-text:hover{
+    padding: 10px;
+    background: #fefefe;
+    color: #800080;
+    word-wrap: break-word;
+}
+
+.box-shadow{
+    box-shadow: #212529 5px 5px 30px;
+}
+
+figcaption{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
 #socialmidia img, #contactMe img{
     width: 32px;
     height: 32px;
