@@ -86,6 +86,7 @@ figcaption{
 #socialmidia ul li{
     display: inline;
     list-style: none;
+    padding: 5px;
 }
 
 main, footer{
@@ -107,6 +108,7 @@ footer h1{
 
 #socialmediafooter p{
     display: inline;
+    padding: 4px;
 }
 
 .arrow img{

@@ -7,3 +7,5 @@
 **24/10/2018:** Acrescentei novas seções e arrumei alguns erros. Ainda tem algumas coisas para fazer.
 
 **27/10/2018:** Corrigi os erros e acrescentei o efeito de scroll smooth.
+
+**08/10/2018:** Acrescentei novos ícones.
