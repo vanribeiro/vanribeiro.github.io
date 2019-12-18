@@ -19,7 +19,9 @@
       });
         
       FB.AppEvents.logPageView();   
-        
+      FB.login(function(response){
+
+      }, {scope: 'instagram_basic, pages_show_list'});
     };
   
     (function(d, s, id){
@@ -32,7 +34,7 @@
   </script>
     <div class="container">
         
-      <div class="fb-login-button" data-width="" data-size="large" data-button-type="continue_with" data-auto-logout-link="false" data-use-continue-as="false"></div>
+      <div class="fb-login-button" data-width="" data-size="large" data-button-type="continue_with" data-auto-logout-link="false" data-use-continue-as="true"></div>
     </div>
 </body>
 </html>
