@@ -28,6 +28,12 @@
        js.src = "https://connect.facebook.net/en_US/sdk.js";
        fjs.parentNode.insertBefore(js, fjs);
      }(document, 'script', 'facebook-jssdk'));
+
+     function checkLoginState() {               // Called when a person is finished with the Login Button.
+    FB.getLoginStatus(function(response) {   // See the onlogin handler
+      statusChangeCallback(response);
+    });
+  }
   </script>
     <div class="container">
       <fb:login-button scope="public_profile,email,instagram_basic,pages_show_list" onlogin="checkLoginState();">
