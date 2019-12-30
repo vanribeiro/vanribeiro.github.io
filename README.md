@@ -9,3 +9,5 @@
 **27/10/2018:** Corrigi os erros e acrescentei o efeito de scroll smooth.
 
 **08/10/2018:** Acrescentei novos ícones.
+
+**30/12/2019:** Acrescentei a [Extensão Firefox](https://addons.mozilla.org/pt-BR/firefox/addon/camel-letter-app/) na página meus links atuais.
