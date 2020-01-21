@@ -11,3 +11,7 @@
 **08/10/2018:** Acrescentei novos ícones.
 
 **30/12/2019:** Acrescentei a [Extensão Firefox](https://addons.mozilla.org/pt-BR/firefox/addon/camel-letter-app/) na página meus links atuais.
+
+**13/01/2020:** Versão do site 2020 disponível.
+
+**20/01/2020:** Correções na página do currículo.
