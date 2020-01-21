@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" media="print" href="css/print.css">
     <title>Currículo - Van Ribeiro</title>
 </head>
 <body id="body">
@@ -18,7 +19,11 @@
                 <input type="checkbox" id="switch-btn" class="switch switch-shadow" onclick="changeModeTheme()">
                 <label for="switch-btn"></label>
             </div>
+            <div class="printing">
+                <input class="printing-btn" type="button" value="Imprimir" onclick="window.print()">
+            </div>
         </div>
+        
     </div>
     <div class="container">
         <aside class="bio-summary">
@@ -35,27 +40,28 @@
                 </div>
             </div>
             <div class="bio">
-                Graduada em Ciência da Computação. 
-                Conhecimento nas linguagens HTML, CSS, JavaScript e 
-                em conceitos como Design Responsivo e Mobile First. 
-                Boas capacidades de análise, raciocínio e criatividade.
+                Ama tecnologias web! 
+                Busca melhorar suas habilidades de programação e 
+                resolução de problemas resolvendo desafios e criando 
+                pequenos projetos. Possui boa capacidade de análise, 
+                raciocínio e criatividade.
             </div> 
             <div class="contact">
+                <h4 class="section-title">Encontre-me:</h4>
                 <p>Taubaté - SP</p>
                 <p>(12) 99601-0682</p>
-                <p>vanribeiro.dev@gmail.com</p> 
+                <p><a href="https://vanribeiro.github.io/">vanribeiro.github.io</a></p>
+                <p>GitHub/<a href="https://github.com/vanribeiro">vanribeiro</a></p>
+                <p>CodePen/<a href="https://codepen.io/vanribeiro/">vanribeiro</a></p>
+                <p><a href="mailto:vanribeiro.dev@gmail.com">vanribeiro.dev@gmail.com</a></p> 
             </div>
         </aside>
         
         <main>
-            <section class="education">
-                <h4 class="section-title">EDUCAÇÃO</h4>
-                <h6 class="bold">2016 – Bacharel em Ciência da Computação</h6>
-                <p class="normal-text">Universidade Anhanguera de Taubaté
-                    Escreveu seu TCC sobre Desenvolvimento Web abordando 
-                    dispositivos móveis e possíveis soluções de design e 
-                    layout através de conceitos como Mobile First e Web Design Responsivo.
-                </p>
+            <section class="skills">
+                <h4 class="section-title">HABILIDADES TÉCNICAS</h4>
+                <p class="normal-text"><strong>Forte:</strong> </span>HTML, CSS, Git</p>
+                <p class="normal-text"> <strong>Conhecedora:</strong>   JavaScript, GitHub, Twitter Bootstrap, Inkscape </p>
             </section>
             <section class="projects">
                 <h4 class="section-title">PROJETOS</h4>
@@ -72,25 +78,19 @@
                     </p>
                 </section>
             </section>
-            <section class="skills">
-                <h4 class="section-title">HABILIDADES TÉCNICAS</h4>
-                <p class="normal-text"><strong>Forte:</strong> </span>HTML, CSS, Git</p>
-                <p class="normal-text"> <strong>Conhecedora:</strong>   JavaScript, GitHub, Twitter Bootstrap, Inkscape </p>
+            <section class="education">
+                <h4 class="section-title">EDUCAÇÃO</h4>
+                <h6 class="bold">2016 – Bacharel em Ciência da Computação</h6>
+                <p class="normal-text">Universidade Anhanguera de Taubaté
+                    Escreveu seu TCC sobre Desenvolvimento Web abordando 
+                    dispositivos móveis e possíveis soluções de design e 
+                    layout através de conceitos como Mobile First e Web Design Responsivo.
+                </p>
             </section>
             <section class="languages">
                 <h4 class="section-title">IDIOMAS</h4>
                 <p class="normal-text">Inglês Intermediário</p>
                 <p class="normal-text">Espanhol Básico</p>
-            </section>
-            <section class="work-experience">
-                <h4 class="section-title">EXPERIÊNCIA PROFISSIONAL</h4>
-                <p class="section-subtitle">Companhia de Transmissão Paulista (CTEEP)</p>
-                <p class="subtitle-italic">Assistente Administrativo Junior</p>
-                <p>Julho/2009 – Setembro/2013</p>
-                <p>Correspondência, atendimento interno, suporte regional ao departamento de Recursos Humanos da Sede,
-                    tais como organização de treinamentos locais, atualização de Carteira de Trabalho,
-                    arquivamento de documentos, entre outras atividades pertinentes a rotina administrativa.
-                </p>
             </section>
             <section class="volunteer">
                 <h4 class="section-title">TRABALHO VOLUNTÁRIO</h4>
@@ -123,6 +123,13 @@
                         líderes de células (reuniões de pequenos grupos).
                     </p>
                 </section>
+            </section>
+            <section class="work-experience">
+                <h4 class="section-title">EXPERIÊNCIA PROFISSIONAL</h4>
+                <p class="section-subtitle">Companhia de Transmissão Paulista (CTEEP)</p>
+                <p class="subtitle-italic">Assistente Administrativo Junior</p>
+                <p>Julho/2009 – Setembro/2013</p>
+                <p>Rotinas administrativas e assistência local ao RH da sede.</p>
             </section>
         </main>
     </div>

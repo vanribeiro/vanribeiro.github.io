@@ -37,9 +37,27 @@ body.light-mode{
     float: left;
 }
 
+.printing{
+    float: right;
+    display: block;
+    clear: both;
+    height: 50px;
+    width: 50px;
+}
+
+.printing-btn{
+    margin-top: 15px;
+    padding: 5px;
+    width: auto;
+    height: 40px;
+    font-weight: bold;
+    color: #404040;
+}
+
 .switch-button{
     width: 0%;
     float: right;
+    padding-right: 35px;
 }
 
 /*------------Switch Button--------------*/
@@ -176,11 +194,30 @@ main{
     }
 }
 
+@media(min-width: 601px){
+
+    .img-fluid{
+        max-width: 50%;
+    }
+
+    .bar-top{
+        padding-bottom: 70px;
+    }
+
+    main{
+        border-left: none;
+    }
+}
+
 @media(min-width: 1200px){
 
     aside{
         float: left;
         width: 20%;
+    }
+
+    .img-fluid{
+        max-width: 100%;
     }
 
     main{
@@ -189,42 +226,9 @@ main{
         border-left: #404040 3px solid;
         padding-left: 40px;
     }
-    
-}
 
-@media print{
-    *{
-        background: transparent;
-        color: #000000;
-    }
-
-    .bar-top{
-        display: none;
-    }
-
-    .container{
-        width: 100%;
-    }
-
-    aside{
-        float: left;
-        width: 20%;
-    }
-
-    main{
-        float: right;
-        width: 65%;
-        border-left: #000000 3px solid;
-        margin-bottom: 0px;
-        padding: 0px 20px 0px;
-        
-    }
-
-    .bio, .contact{
-        font-size: 0.9em;
+    .contact{
+        padding-top: 100%;
     }
     
-    .section-title{
-        font-size: 1.5em;
-    }
 }
