@@ -253,6 +253,10 @@ a, .menu-icon{
     filter: grayscale(100%);
 }
 
+.column-grid img:hover{
+    filter: grayscale(0);
+}
+
 .column-grid a{
     text-decoration: none;
     color: #ebebeb;
