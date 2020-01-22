@@ -39,6 +39,11 @@ h2, h3, h4, h5, h6{
     margin: auto
 }
 
+.link-on-text{
+    color: #404040;
+    text-decoration: underline;
+}
+
 footer{
     color: #ebebeb;
     text-align: center;
@@ -256,7 +261,7 @@ a, .menu-icon{
     position: relative;
 }
 
-.column-grid figcaption{
+.column-grid .caption-img{
     background-color: #404040;
     padding: 5px 5px;
     text-align: center;
@@ -265,6 +270,35 @@ a, .menu-icon{
     right: 0;
     left: 0;
 }
+
+.tags-img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 15px 5px;
+}
+
+.tags-img a{
+    padding: 5px;
+    display: inline;
+}
+
+.tags-img{
+    flex: auto;
+}
+
+.tags-img .status{
+    border-radius: 5px;
+    cursor: default;
+}
+
+.tags-img .code-link, .sample-link{
+    background-color: #edac2a;
+    background-color: #404040;
+    border-radius: 5px;
+
+}
+
 
 @media only screen and (max-width: 600px){
 
