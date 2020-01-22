@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: hsl(240, 78%, 98%);
+    background-image: url(../images/bg-top.svg);
+    background-position-y: top;
+    background-position-x: right;
+    background-repeat: no-repeat;
+    color: hsl(232, 13%, 33%);
+    font-size: 15px;
+    text-align: center;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+.header-pricing{
+    margin-bottom: 60px;
+}
+
+.box-price{
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 5px;
+    height: 50%;
+    margin-bottom: 20px;
+    box-shadow: 1px 1px 15px #404040;
+}
+
+.box-price:nth-child(even){
+    background-image: linear-gradient(to right, hsl(236, 72%, 79%),hsl(237, 63%, 64%));
+    color: #ffffff;
+}
+
+.box-price:nth-child(even) a{
+    background-image: none;
+    background-color: #ffffff;
+    color: hsl(232, 13%, 33%);
+}
+
+.btn-area{
+    height: 50px;
+    margin: 30px 0 30px;
+}
+
+.btn-area a{
+    text-decoration: none;
+    text-transform: uppercase;
+    background-image: linear-gradient(to right, hsl(236, 72%, 79%),hsl(237, 63%, 64%));
+    color:  hsl(240, 78%, 98%);
+    padding: 15px 25%;
+    font-size: 10px;
+    letter-spacing: 2px;
+    border-radius: 5px;
+}
+
+.benefits{
+    width: 100%;
+    padding: 0 15px 0 15px;
+}
+
+thead th{
+    padding: 0;
+    margin: 0;
+}
+
+.benefits tr td{
+    border-bottom: 1px solid hsla(234, 14%, 74%, 0.452);
+    height: 50px;
+    vertical-align: middle;
+}
+
+.btn-info{
+    height: 25px;
+    padding: 25px;
+}
+
+.annually-price{
+    display: none;
+}
+
+.dollar-sign{
+    font-size: 1.8rem;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+}
+
+.price{
+    font-size: 4rem;
+    font-weight: bold;
+    padding: 0;
+    margin: 5px;
+}
+
+#toggle-price{
+    visibility: hidden;
+}
+
+.change-price{
+    width: 100px;
+    height: 50px;
+    background-color: #404040;
+}
+
+.attribution {
+    font-size: 11px;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%); 
+}
+
+@media(min-width: 1200px){
+    .all-prices{
+        display: flex;
+        justify-content: space-around;
+    }   
+    
+    .box-price{
+        margin: 15px;
+    }
+}
