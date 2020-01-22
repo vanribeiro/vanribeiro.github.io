@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Anton|Bebas+Neue|Montserrat&display=swap');
 
-body, p, h1, h2, h3, h4, h5, h6, img{
+body, p, h1, h2, h3, h4, h5, h6, img, figure, figcaption{
     padding: 0;
     margin: 0;
 }
@@ -227,7 +227,51 @@ a, .menu-icon{
     padding: 15px 0 15px;
 }
 
+.row-grid, .column-grid{
+    padding: 0 4px;
+}
+
+.row-grid{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column-grid{
+    flex: 25%;
+    max-width: 50%;
+}
+
+.column-grid img{
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+.column-grid a{
+    text-decoration: none;
+    color: #ebebeb;
+    width: 100%;
+}
+
+.column-grid figure{
+    position: relative;
+}
+
+.column-grid figcaption{
+    background-color: #404040;
+    padding: 5px 5px;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
 @media only screen and (max-width: 600px){
+
+    .column-grid{
+        flex: 100%;
+        max-width: 100%;
+    }
 
     [class*="col-"]{
         width: 100%;
