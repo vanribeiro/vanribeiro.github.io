@@ -157,7 +157,7 @@ a, .menu-icon{
 
 .main{
     width: 100%;
-    background-color: #ffa574;
+    background-color: #ebebeb;
     padding-top: 20px;
     padding-bottom: 30px;
     box-shadow: 0px 2px 15px #1a1a1a;
@@ -174,6 +174,7 @@ a, .menu-icon{
     box-shadow: 2px 4px 6px #404040;
     border-radius: 50%;
     height: 50%;
+    filter: grayscale(100%);
 }
 
 .txt-bio{
@@ -185,7 +186,7 @@ a, .menu-icon{
     font: 1.25em 'Anton', sans-serif;
     text-align: center;
     color: #B56A7A;
-    background-color: #ebebeb;
+    background-color: #404040;
     border-radius: 5px;
     box-shadow: 0px 4px 4px #4040407c;
 }
@@ -249,12 +250,12 @@ a, .menu-icon{
 .column-grid img{
     margin-top: 8px;
     vertical-align: middle;
+    filter: grayscale(100%);
 }
 
 .column-grid a{
     text-decoration: none;
     color: #ebebeb;
-    width: 100%;
 }
 
 .column-grid figure{
@@ -262,13 +263,9 @@ a, .menu-icon{
 }
 
 .column-grid .caption-img{
-    background-color: #404040;
+    background-color: #B56A7A;
     padding: 5px 5px;
     text-align: center;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    left: 0;
 }
 
 .tags-img{
@@ -283,10 +280,6 @@ a, .menu-icon{
     display: inline;
 }
 
-.tags-img{
-    flex: auto;
-}
-
 .tags-img .status{
     border-radius: 5px;
     cursor: default;
@@ -296,11 +289,39 @@ a, .menu-icon{
     background-color: #edac2a;
     background-color: #404040;
     border-radius: 5px;
-
 }
 
+.front-end header, .back-end header, .others header{
+    border-bottom: #404040 2px solid;
+    padding: 5px 5px;
+    text-shadow: #B56A7A 2px 2px 2px;
+    letter-spacing: 0.2rem;
+    font-size: 2rem;
+}
+
+.front-end, .back-end, .others{
+    padding: 5px 15px;
+}
 
 @media only screen and (max-width: 600px){
+
+    .front-end header, .back-end header, .others header{
+        letter-spacing: 0.2rem;
+        font-size: 1.5rem;
+    }
+
+    .tags-img{
+        position: relative;
+        display: block;
+        line-height: 2rem;
+        text-align: center;
+    }
+
+    .column-grid .caption-img{
+        background-color: #B56A7A;
+        padding: 5px 5px;
+        text-align: center;
+    }
 
     .column-grid{
         flex: 100%;
@@ -359,6 +380,17 @@ a, .menu-icon{
 }
 
 @media only screen and (min-width: 601px){
+
+    .column-grid .caption-img{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+    }
+
+    .column-grid{
+        margin: auto;
+    }
 
     .social-medias{
         width: 40%;
@@ -460,6 +492,10 @@ a, .menu-icon{
         background-color: #404040;
     }
 
+    .portrait{
+        padding-left: 7%;
+        padding-right: 7%;
+    }
 }
 
 @media only screen and (min-width: 950px){
