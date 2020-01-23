@@ -307,31 +307,42 @@ a, .menu-icon{
     padding: 5px 15px;
 }
 
-
-.back-end-box, .front-end-box, .others-box{
-    color: #ebebeb;
-    text-shadow: #404040 3px 3px 3px;
-    width: 100%;
-    height: 300px;
-    margin: 15px;
+.back-end-box, .front-end-box, .others-box, 
+.front-end-box figcaption, .back-end-box figcaption, .others-box figcaption{
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.back-end-box{
-    background-color: #85c9d0;
+.back-end-box, .front-end-box, .others-box{
+    color: #B56A7A;
+    text-shadow: #000000 5px 5px 2px;
+    width: 100%;
+    height: 100%;
+    margin: 15px auto 15px auto;
 }
 
-.front-end-box{
-    background-color: #B56A7A;
+.front-end-box figure, .back-end-box figure, .others-box figure{
+    position: absolute;
 }
 
-.others-box{
-    background-color: #edac2a;
+.front-end-box figcaption, .back-end-box figcaption, .others-box figcaption{
+    background-color: #404040d5;
+    position: relative;
+    width: 100%;
+    height: 200px;
+    padding: 10%;
 }
 
 @media only screen and (max-width: 600px){
+
+    .front-end-box figure, .back-end-box figure, .others-box figure{
+        width: 80%;
+    }
+
+    .front-end-box figcaption, .back-end-box figcaption, .others-box figcaption{
+        font-size: 1.5rem;
+    }
 
     .front-end header, .back-end header, .others header{
         letter-spacing: 0.2rem;
@@ -408,6 +419,16 @@ a, .menu-icon{
 }
 
 @media only screen and (min-width: 601px){
+
+    .front-end-box figure, .back-end-box figure, .others-box figure{
+        width: 25%;
+    }
+
+    .front-end-box figcaption, .back-end-box figcaption, .others-box figcaption{
+        font-size: 0.9rem;
+        height: 100px;
+    }
+
 
     .column-grid .caption-img{
         position: absolute;
@@ -500,6 +521,14 @@ a, .menu-icon{
 
 @media only screen and (min-width: 700px){
 
+    .front-end-box figure, .back-end-box figure, .others-box figure{
+        width: 25%;
+    }
+
+    .front-end-box figcaption, .back-end-box figcaption, .others-box figcaption{
+        font-size: 1.1rem;
+    }
+
     .social-medias a{
         padding: 5px;
     }
@@ -560,6 +589,8 @@ a, .menu-icon{
         padding: 5px 5px;
     }
 
-    
+    .front-end-box figcaption, .back-end-box figcaption, .others-box figcaption{
+        font-size: 1.5rem;
+    }
 
 }

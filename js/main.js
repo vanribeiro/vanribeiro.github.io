@@ -45,8 +45,42 @@ function tagStatus(){
     
 }
 
-function main() {  
+var slideIndexFrontEnd = 0;
+var slideIndexBackEnd = 0;
+var slideIndexOthers = 0;
+function showSlides() {
+    let slidesBackEnd = document.querySelectorAll(".backend-slide");
+    let slidesFrontEnd = document.querySelectorAll(".frontend-slide");
+    let slidesOthers = document.querySelectorAll(".others-slides");
+    for(let i = 0; i < slidesFrontEnd.length; i++){
+        slidesFrontEnd[i].style.display = 'none';
+    }
+
+    for(let i = 0; i < slidesBackEnd.length; i++){
+        slidesBackEnd[i].style.display = 'none';
+    }
+
+    for(let i = 0; i < slidesOthers.length; i++){
+        slidesOthers[i].style.display = 'none';
+    }
+
+    slideIndexFrontEnd++;
+    slideIndexBackEnd++;
+    slideIndexOthers++;
+    if(slideIndexFrontEnd > slidesFrontEnd.length){slideIndexFrontEnd = 1;}
+    if(slideIndexBackEnd > slidesBackEnd.length){slideIndexBackEnd = 1;}
+    if(slideIndexOthers > slidesOthers.length){slideIndexOthers = 1}
+
+        slidesFrontEnd[slideIndexFrontEnd-1].style.display = 'block';
+        slidesBackEnd[slideIndexBackEnd-1].style.display = 'block';
+        slidesOthers[slideIndexOthers-1].style.display = 'block';
+        setTimeout(showSlides, 2500);
+}
+
+function main() {
     tagStatus();
+    showSlides();
+    
 }
 
 
