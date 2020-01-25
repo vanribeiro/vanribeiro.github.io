@@ -11,7 +11,6 @@ function changeModeTheme() {
     var currentClassBody = body.className;
 
     if(currentClassBody == 'dark-mode'){
-        mainText.style.borderLeft = '#404040 3px solid';
         headerName.style.borderBottom = '#404040 3px solid';
         body.className = 'light-mode';
         for(var i = 0; i < anchor.length; i++){
@@ -19,7 +18,6 @@ function changeModeTheme() {
         }
     } else{
         body.className = 'dark-mode';
-        mainText.style.borderLeft = '#ebebed 3px solid';
         headerName.style.borderBottom = '#ebebeb 3px solid';
         for(var i = 0; i < anchor.length; i++){
             anchor[i].style.color = '#ebebeb';

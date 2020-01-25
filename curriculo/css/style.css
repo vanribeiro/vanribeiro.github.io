@@ -223,8 +223,15 @@ main{
     main{
         float: right;
         width: 65%;
-        border-left: #404040 3px solid;
         padding-left: 40px;
+    }
+
+    body.dark-mode main{
+        border-left: #ebebeb 3px solid;
+    }
+
+    body.light-mode main{
+        border-left: #404040 3px solid;
     }
 
     .contact{
