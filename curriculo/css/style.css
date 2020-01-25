@@ -224,6 +224,7 @@ main{
         float: right;
         width: 65%;
         padding-left: 40px;
+        border-left: #404040 3px solid;
     }
 
     body.dark-mode main{
