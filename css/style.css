@@ -248,7 +248,7 @@ a, .menu-icon{
 
 .column-grid{
     flex: 25%;
-    max-width: 50%;
+    max-width: 48%;
 }
 
 .column-grid img{
@@ -595,6 +595,7 @@ a, .menu-icon{
     }
 
     .portrait{
+        width: 40%;
         padding-left: 7%;
         padding-right: 7%;
     }
@@ -616,7 +617,7 @@ a, .menu-icon{
 
 
     .technologies{
-        padding-top: 25px;
+        padding-top: 10px;
         position: absolute;
         width: 100%;
     }
@@ -645,7 +646,6 @@ a, .menu-icon{
         height: 350px;
     }
 
-
     .content-page{
         padding-bottom: 15%;
         display: flex;
@@ -661,6 +661,10 @@ a, .menu-icon{
     .front-end-box figcaption, .back-end-box figcaption, .others-box figcaption{
         font-size: 1.5rem;
         height: 250px;
+    }
+
+    .others .card{
+        height: 280px;
     }
 
 }
