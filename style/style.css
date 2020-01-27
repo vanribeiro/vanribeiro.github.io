@@ -32,7 +32,6 @@ body{
     border-radius: 5px;
     height: 50%;
     margin-bottom: 20px;
-    box-shadow: 1px 1px 15px #404040;
 }
 
 .box-price:nth-child(even){
@@ -42,7 +41,7 @@ body{
 
 .box-price:nth-child(even) a{
     background-image: none;
-    background-color: #ffffff;
+    background-color: hsl(240, 78%, 98%);
     color: hsl(232, 13%, 33%);
 }
 
@@ -60,6 +59,19 @@ body{
     font-size: 10px;
     letter-spacing: 2px;
     border-radius: 5px;
+}
+
+.btn-area:nth-child(even) a:hover{
+    color: hsl(232, 13%, 33%);
+    background-image: none;
+    border: 1px solid hsl(232, 13%, 33%);
+    font-weight: bold;
+}
+
+.box-price:nth-child(2n) a:hover{
+    color: hsl(240, 78%, 98%);
+    background-image: linear-gradient(to right, hsl(236, 72%, 79%),hsl(237, 63%, 64%));
+    border: 1px solid hsl(240, 78%, 98%);
 }
 
 .benefits{
@@ -173,9 +185,12 @@ body{
     .all-prices{
         display: flex;
         justify-content: space-around;
-    }   
-    
-    .box-price{
-        margin: 15px;
+    }
+
+    .box-price:nth-child(2n){
+        position: relative;
+        z-index: 3;
+        margin-top: -20px;
+        padding: 15px 0px 25px;
     }
 }
