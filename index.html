@@ -12,11 +12,14 @@
   <main class="container">
     <header class="header-pricing">
       <h2>Our Pricing</h2>
-      <span>Annually</span>
-      <label for="toggle-price" class="change-price"></label>
-      <input type="checkbox" name="toggle-price" id="toggle-price">
+      <div class="switch-btn">
+        <span>Annually</span>
+        <input type="checkbox" id="toggle-price" class="toggle toggle-switch" onclick="togglePrice();">
+        <label for="toggle-price" class="change-price"></label>
       <span>Monthly</span>
+      </div>
     </header>
+    <p class="dangerous">I need to solve this part...</p>
     <article class="all-prices">
       <section class="box-price">
         <table class="benefits">
@@ -29,11 +32,19 @@
             </tr>
             <tr class="monthly-price">
               <td>
-                <h1 class="price"><span class="dollar-sign">&dollar;</span>19.99</h1>
+                <h1 class="price">
+                  <span class="dollar-sign">
+                    &dollar;</span>19.99
+                </h1>
               </td>
             </tr>
             <tr class="annually-price">
-              <td><h1 class="price"><span class="dollar-sign">&dollar;</span>199.99</h1></td>
+              <td>
+                <h1 class="price">
+                  <span class="dollar-sign">
+                    &dollar;</span>199.99
+                  </h1>
+                </td>
             </tr>
             <tr>
               <td>500 GB Storage</td>
@@ -124,5 +135,6 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="https://github.com/vanribeiro">Van Ribeiro</a>.
   </div>
+  <script src="js/main.js"></script>
 </body>
 </html>

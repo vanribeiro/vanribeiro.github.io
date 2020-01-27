@@ -78,10 +78,6 @@ thead th{
     padding: 25px;
 }
 
-.annually-price{
-    display: none;
-}
-
 .dollar-sign{
     font-size: 1.8rem;
     vertical-align: middle;
@@ -96,15 +92,74 @@ thead th{
     margin: 5px;
 }
 
-#toggle-price{
-    visibility: hidden;
+/*--Switch Button----------------------------*/
+
+.switch-btn span{
+    display: flex;
+    padding: 5px 15px 5px 15px;
+}
+
+.switch-btn{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
 }
 
 .change-price{
     width: 100px;
     height: 50px;
-    background-color: #404040;
+    background-color: #eeeeee;
 }
+
+.toggle{
+    visibility: hidden;
+    position: absolute;
+    margin-left: -9999px;
+}
+
+.toggle + label{
+    display: block;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    user-select: none;
+}
+
+.toggle-switch + label{
+    padding: 2px;
+    width: 60px;
+    height: 32px;
+    background-image: linear-gradient(to right, hsl(236, 72%, 79%),hsl(237, 63%, 64%));
+    border-radius: 30px;
+}
+
+.toggle-switch + label::before,
+.toggle-switch + label::after{
+    display: block;
+    position: absolute;
+    top: 1;
+    left: 1;
+    bottom: 1;
+    content: "";
+}
+
+.toggle-switch + label::after{
+    width: 32px;
+    height: 32px;
+    background-color: hsl(240, 78%, 98%);
+    border-radius: 100%;
+    transition: all 0.4s;
+}
+
+.toggle-switch:checked + label::after{
+    transform: translateX(28px);
+}
+
+.monthly-price{
+    display: none;
+}
+
+/*-------------------------------------------*/
 
 .attribution {
     font-size: 11px;
