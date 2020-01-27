@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
 
+body, tr, td, table{
+    padding: 0;
+    margin: 0;
+}
+
 body{
     font-family: 'Montserrat', sans-serif;
     background-color: hsl(240, 78%, 98%);
@@ -27,7 +32,6 @@ body{
     border-radius: 5px;
     height: 50%;
     margin-bottom: 20px;
-    box-shadow: 1px 1px 15px #404040;
 }
 
 .box-price:nth-child(even){
@@ -37,7 +41,7 @@ body{
 
 .box-price:nth-child(even) a{
     background-image: none;
-    background-color: #ffffff;
+    background-color: hsl(240, 78%, 98%);
     color: hsl(232, 13%, 33%);
 }
 
@@ -57,14 +61,22 @@ body{
     border-radius: 5px;
 }
 
+.btn-area:nth-child(even) a:hover{
+    color: hsl(232, 13%, 33%);
+    background-image: none;
+    border: 1px solid hsl(232, 13%, 33%);
+    font-weight: bold;
+}
+
+.box-price:nth-child(2n) a:hover{
+    color: hsl(240, 78%, 98%);
+    background-image: linear-gradient(to right, hsl(236, 72%, 79%),hsl(237, 63%, 64%));
+    border: 1px solid hsl(240, 78%, 98%);
+}
+
 .benefits{
     width: 100%;
     padding: 0 15px 0 15px;
-}
-
-thead th{
-    padding: 0;
-    margin: 0;
 }
 
 .benefits tr td{
@@ -76,10 +88,6 @@ thead th{
 .btn-info{
     height: 25px;
     padding: 25px;
-}
-
-.annually-price{
-    display: none;
 }
 
 .dollar-sign{
@@ -96,15 +104,74 @@ thead th{
     margin: 5px;
 }
 
-#toggle-price{
-    visibility: hidden;
+/*--Switch Button----------------------------*/
+
+.switch-btn span{
+    display: flex;
+    padding: 5px 15px 5px 15px;
+}
+
+.switch-btn{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
 }
 
 .change-price{
     width: 100px;
     height: 50px;
-    background-color: #404040;
+    background-color: #eeeeee;
 }
+
+.toggle{
+    visibility: hidden;
+    position: absolute;
+    margin-left: -9999px;
+}
+
+.toggle + label{
+    display: block;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    user-select: none;
+}
+
+.toggle-switch + label{
+    padding: 2px;
+    width: 60px;
+    height: 32px;
+    background-image: linear-gradient(to right, hsl(236, 72%, 79%),hsl(237, 63%, 64%));
+    border-radius: 30px;
+}
+
+.toggle-switch + label::before,
+.toggle-switch + label::after{
+    display: block;
+    position: absolute;
+    top: 1;
+    left: 1;
+    bottom: 1;
+    content: "";
+}
+
+.toggle-switch + label::after{
+    width: 32px;
+    height: 32px;
+    background-color: hsl(240, 78%, 98%);
+    border-radius: 100%;
+    transition: all 0.4s;
+}
+
+.toggle-switch:checked + label::after{
+    transform: translateX(28px);
+}
+
+.monthly-price{
+    display: none;
+}
+
+/*-------------------------------------------*/
 
 .attribution {
     font-size: 11px;
@@ -118,9 +185,12 @@ thead th{
     .all-prices{
         display: flex;
         justify-content: space-around;
-    }   
-    
-    .box-price{
-        margin: 15px;
+    }
+
+    .box-price:nth-child(2n){
+        position: relative;
+        z-index: 3;
+        margin-top: -20px;
+        padding: 15px 0px 25px;
     }
 }
