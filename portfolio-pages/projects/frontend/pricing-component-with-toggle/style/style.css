@@ -124,9 +124,9 @@ body{
 }
 
 .toggle{
-    visibility: hidden;
+    /* visibility: hidden;
     position: absolute;
-    margin-left: -9999px;
+    margin-left: -9999px; */
 }
 
 .toggle + label{
