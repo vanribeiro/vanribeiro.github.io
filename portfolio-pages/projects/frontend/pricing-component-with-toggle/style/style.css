@@ -123,11 +123,6 @@ body{
     background-color: #eeeeee;
 }
 
-.toggle{
-    /* visibility: hidden;
-    position: absolute;
-    margin-left: -9999px; */
-}
 
 .toggle + label{
     display: block;
