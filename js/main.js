@@ -1,9 +1,10 @@
+let monthly = document.querySelectorAll('.monthly-price');
+let annually = document.querySelectorAll('.annually-price');
+let toggleBtn = document.querySelector('#toggle-price');
+
 function togglePrice(){
-    let monthly = document.querySelectorAll('.monthly-price');
-    let annually = document.querySelectorAll('.annually-price');
-    let toogleBtn = document.querySelector('#toggle-price');
-    
-    if(toogleBtn.checked){
+
+    if(toggleBtn.checked){
         for(let i = 0; i < monthly.length; i++){
             annually[i].style.display = 'none';
             monthly[i].style.display = 'inline-table';
