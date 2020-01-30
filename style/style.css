@@ -83,10 +83,6 @@ button:hover {
   box-shadow: #ce9797 1px 3px 15px;
 }
 
-input:focus {
-  border: 2px #f96262 solid;
-}
-
 .attribution {
   font-size: 11px;
   text-align: center;
