@@ -1,0 +1,26 @@
+{
+  "name": "base-apparel-coming-soon",
+  "version": "1.0.0",
+  "description": "FrontEnd Mentor challenge.",
+  "main": "js/main.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha -c"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vanribeiro/base-apparel-coming-soon-master.git"
+  },
+  "author": "Van Ribeiro",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vanribeiro/base-apparel-coming-soon-master/issues"
+  },
+  "homepage": "https://github.com/vanribeiro/base-apparel-coming-soon-master#readme",
+  "devDependencies": {
+    "chai": "4.2.0",
+    "mocha": "7.0.1"
+  }
+}

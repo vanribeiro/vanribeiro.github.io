@@ -90,9 +90,15 @@ button:hover{
     box-shadow: $desatured-red 1px 3px 15px;
 }
 
-input:focus{
-    border: 2px $soft-red solid;
-}
+// input:required:invalid, input:focus:invalid{
+//     background-image: url(/images/icon-error.svg);
+//     background-repeat: no-repeat;
+//     background-position: 83% 50%;
+// }
+
+// input:required:valid{
+//     background-image: none;
+// }
 
 .attribution { 
     font-size: 11px; 
