@@ -4,5 +4,5 @@ exports.emailValidation = (email) => {
     return answer;
 }
 
-//input.addEventListener('submit', validationEmail());
-//let input = document.querySelector('#email-address');
+// //input.addEventListener('submit', validationEmail());
+// //let input = document.querySelector('#email-address');
