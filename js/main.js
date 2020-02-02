@@ -1,6 +1,6 @@
 const input = document.querySelector('#email');
 const msg = document.querySelector('#msg');
-
+const form = document.querySelector('form');
 /**
  * This function was written using the RegExp of below link:
  * https://codigofonte.com.br/codigos/validacao-completa-de-email-com-javascript-e-expressao-regular
@@ -18,15 +18,18 @@ function isAnEmail (email) {
     }
 }
 
-let validationEmail = () =>{
+form.addEventListener('submit', (event) =>{
     let p = document.createElement('p');
-    if(isAnEmail(input.value) == false){
-        p.appendChild = 'Please, provide a valid e-mail!'
+    let value = input.value;
+
+    if(isAnEmail(value) == false || value == ''){
+        event.preventDefault();
+        p.textContent = 'Please, provide a valid e-mail!';
+        input.classList.add('error-msg');
     }
     msg.appendChild(p);
-}
+});
 
-input.addEventListener('submit', validationEmail());
 
 
 // exports.isAnEmail = isAnEmail;
