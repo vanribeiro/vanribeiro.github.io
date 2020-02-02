@@ -83,6 +83,20 @@ button:hover {
   box-shadow: #ce9797 1px 3px 15px;
 }
 
+.error-msg {
+  background-image: url(/images/icon-error.svg);
+  background-repeat: no-repeat;
+  background-position: 83% 50%;
+}
+
+#msg {
+  color: #f96262;
+}
+
+input:focus {
+  border: 2px solid #f96262;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;

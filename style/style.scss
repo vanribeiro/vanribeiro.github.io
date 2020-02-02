@@ -90,15 +90,19 @@ button:hover{
     box-shadow: $desatured-red 1px 3px 15px;
 }
 
-// input:required:invalid, input:focus:invalid{
-//     background-image: url(/images/icon-error.svg);
-//     background-repeat: no-repeat;
-//     background-position: 83% 50%;
-// }
+.error-msg{
+    background-image: url(/images/icon-error.svg);
+    background-repeat: no-repeat;
+    background-position: 83% 50%;
+}
 
-// input:required:valid{
-//     background-image: none;
-// }
+#msg{
+    color: $soft-red;
+}
+
+input:focus{
+    border: 2px solid $soft-red;
+}
 
 .attribution { 
     font-size: 11px; 
