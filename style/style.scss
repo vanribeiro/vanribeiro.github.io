@@ -91,7 +91,7 @@ button:hover{
 }
 
 input.error-msg{
-    background-image: url("/images/icon-error.svg");
+    background-image: url("../images/icon-error.svg");
     background-repeat: no-repeat;
     background-position: 83% 50%;
 }
@@ -168,7 +168,7 @@ input:focus{
 @media only screen and (min-width:700px){
 
     body{
-        background-image: url("/images/bg-pattern-desktop.svg");
+        background-image: url("../images/bg-pattern-desktop.svg");
         background-repeat: no-repeat;
     }
 
@@ -181,29 +181,43 @@ input:focus{
     }
 
     nav{
-        width: 55%;
+        width: 54vw;
         float: left;
+        padding-top: 30px;
     }
 
     aside{
-        width: 45%;
+        width: 44vw;
         float: right;
-        height: 100vh;
+        max-height: 100vh;
+    }
+
+    aside img{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        top: 0;
     }
 
     main{
         float: left;
-        width: 55%;
+        width: 54vw;
+        top: 15%;
         text-align: left;
         padding-bottom: 10%;
+        position: absolute;
+        max-height: 100vh;
     }
 
     footer{
-        width: 55%;
+        width: 54vw;
+        position: relative;
+        bottom: 0;
         float: left;
+        top: 39vw;
     }
 
     input[type=email]{
-        width: 25%;
+        width: 45%;
     }
 }
