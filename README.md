@@ -1,4 +1,4 @@
-# Developing - jan/2020
+# Concluded - 04/02/2020
 
 I'm trying to use the [conventional commits](https://www.conventionalcommits.org/en/v1.0.0-beta.2/) on this repo.
 
