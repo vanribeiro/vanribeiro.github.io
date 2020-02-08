@@ -4,4 +4,54 @@
         text-align: center;
     }
 
+    .top-nav{
+        width: 100vw;
+        background-color: $very-light-gray;
+        position: fixed;
+        z-index: 1;
+    }
+
+    .nav-logo h1{
+        font-size: 1.2rem;
+        text-align: left;
+    }
+
+    .nav-logo{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 30px;
+        padding: 5px;
+    }
+
+    .nav-all-links{
+        width: 100vw;
+        height: 100vh;
+        background-color: $very-dark-violet;
+        background-image: url("../images/bg-pattern-mobile-nav.svg");
+        background-repeat: no-repeat;
+        background-position: 75% 75%;
+        background-size: contain;
+        padding: 15px 0px;
+    }
+
+    .nav-all-links a{
+        display: block;
+        color: #fff;
+        font-size: 0.8rem;
+        font-weight: 700;
+        height: 14px;
+        padding: 12px 0px;
+        border: $very-dark-violet 2px solid;
+    }
+
+    .top-nav a:hover{
+        border: $very-light-gray 2px solid;
+    }
+
+    main, footer{
+        position: relative;
+        z-index: 0;
+    }
+
 }
