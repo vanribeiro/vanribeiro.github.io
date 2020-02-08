@@ -1,0 +1,61 @@
+@import 'variables.scss';
+@import 'mobile.scss';
+
+a, article, body, div,header, h1, h2,
+footer, main, nav, section, img, figcaption, picture{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body{
+    color: $very-dark-violet;
+}
+
+body, nav h1, footer h1, footer h2{
+    font-family: $body-font;
+    font-size: 16px;
+}
+
+a, nav h1, footer{
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+nav h1, footer a{
+    color: $dark-violet;
+}
+
+footer h1{
+    color: $dark-grayish-volet;
+}
+
+h1, h2{
+    font-family: $header-font;
+}
+
+.img-fluid{
+    max-width: 100%;
+}
+
+.footer-section a{
+    display: block;
+}
+
+.container{
+    width: 90%;
+    margin: auto;
+}
+
+.footer-social-media path:hover{
+    fill: $very-dark-violet;
+}
+
+.attribution {
+    font-size: 11px; 
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
