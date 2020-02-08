@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css?family=DM+Serif+Display|Karla:400,700&display=swap");
+@media only screen and (max-width: 600px) {
+  body {
+    text-align: center;
+  }
+}
+a, article, body, div, header, h1, h2,
+footer, main, nav, section, img, figcaption, picture {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+body, footer h1, footer h2 {
+  font-family: "Karla", sans-serif;
+  font-size: 16px;
+}
+
+footer {
+  text-transform: uppercase;
+}
+
+footer a:hover{
+  text-decoration: underline;
+}
+
+h1, h2 {
+  font-family: "DM Serif Display", serif;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+.footer-social-media path:hover {
+  fill: #2b272f;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+/*# sourceMappingURL=style.css.map */
