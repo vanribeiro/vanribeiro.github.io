@@ -1,5 +1,6 @@
 @import 'variables.scss';
 @import 'mobile.scss';
+@import 'desktop.scss';
 
 a, article, body, div,header, h1, h2,
 footer, main, nav, section, img, figcaption, picture{
@@ -17,7 +18,7 @@ body, nav h1, footer h1, footer h2{
     font-size: 16px;
 }
 
-a, nav h1, footer{
+a, nav h1, footer section{
     text-transform: uppercase;
     text-decoration: none;
 }
@@ -32,6 +33,57 @@ footer h1{
 
 h1, h2{
     font-family: $header-font;
+}
+
+main p{
+    font-size: 16px;
+    line-height: 25px;
+}
+
+section{
+    padding-top: 25px;
+}
+
+section p{
+    color: $dark-grayish-volet;
+}
+
+footer section a{
+    font-size: 16px;
+    padding: 7px;
+    color: $dark-violet;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+footer h1{
+    padding: 25px;
+}
+
+.cover-text{
+    background-color: $dark-violet;
+    color: $very-light-gray;
+}
+
+.banner{
+    background-image: url("/images/bg-pattern-intro-right-mobile.svg");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-color: $dark-violet;
+    color: $very-light-gray;
+    padding: 50px;
+    line-height: 40px;
+}
+
+.fake-button{
+    padding-top: 40px;
+}
+
+.fake-button a{
+    color: $very-light-gray;
+    letter-spacing: 2px;
+    border: 1px solid $very-light-gray;
+    padding: 10px 40px;
 }
 
 .img-fluid{

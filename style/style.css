@@ -54,6 +54,79 @@
     position: relative;
     z-index: 0;
   }
+
+  .banner {
+    margin-bottom: 50px;
+  }
+
+  .cover-text {
+    padding: 100px 0px 100px;
+    margin-top: -5px;
+    background-image: url("/images/bg-pattern-intro-left-mobile.svg");
+    background-repeat: no-repeat;
+  }
+
+  .cover-text .container {
+    width: 80%;
+  }
+
+  .article-description {
+    padding: 100px 0px 100px;
+  }
+
+  .section-title {
+    font-size: 2.5rem;
+    font-weight: 400;
+  }
+
+  .footer-brand {
+    padding: 50px 0px;
+    background-image: url("/images/bg-pattern-footer-mobile.svg");
+    background-repeat: no-repeat;
+  }
+
+  .footer-brand .container {
+    border-bottom: 1px solid #837d87;
+    padding-bottom: 80px;
+  }
+
+  .footer-title img {
+    padding-bottom: 15px;
+  }
+}
+@media only screen and (min-width: 900px) {
+  main {
+    margin-bottom: 150px;
+  }
+
+  footer {
+    background-image: url("/images/bg-pattern-footer-desktop.svg");
+    background-repeat: no-repeat;
+  }
+
+  .article-description .all-sections, .banner,
+.all-footer-links, .footer-brand .container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .banner {
+    align-items: center;
+  }
+
+  .banner h1 {
+    width: 40%;
+    font-size: 3rem;
+  }
+
+  .footer-section h1 {
+    padding: 0px 5px 25px;
+  }
+
+  .footer-brand .container {
+    border-bottom: 1px solid #837d87;
+    padding: 0px 0px 30px;
+  }
 }
 a, article, body, div, header, h1, h2,
 footer, main, nav, section, img, figcaption, picture {
@@ -71,7 +144,7 @@ body, nav h1, footer h1, footer h2 {
   font-size: 16px;
 }
 
-a, nav h1, footer {
+a, nav h1, footer section {
   text-transform: uppercase;
   text-decoration: none;
 }
@@ -86,6 +159,57 @@ footer h1 {
 
 h1, h2 {
   font-family: "DM Serif Display", serif;
+}
+
+main p {
+  font-size: 16px;
+  line-height: 25px;
+}
+
+section {
+  padding-top: 25px;
+}
+
+section p {
+  color: #837d87;
+}
+
+footer section a {
+  font-size: 16px;
+  padding: 7px;
+  color: #2d2640;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+footer h1 {
+  padding: 25px;
+}
+
+.cover-text {
+  background-color: #2d2640;
+  color: #fafafa;
+}
+
+.banner {
+  background-image: url("/images/bg-pattern-intro-right-mobile.svg");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-color: #2d2640;
+  color: #fafafa;
+  padding: 50px;
+  line-height: 40px;
+}
+
+.fake-button {
+  padding-top: 40px;
+}
+
+.fake-button a {
+  color: #fafafa;
+  letter-spacing: 2px;
+  border: 1px solid #fafafa;
+  padding: 10px 40px;
 }
 
 .img-fluid {
