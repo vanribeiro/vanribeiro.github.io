@@ -63,12 +63,14 @@
   .cover-text {
     padding: 100px 0px 100px;
     margin-top: -5px;
+    background-color: #2d2640;
     background-image: url("/images/bg-pattern-intro-left-mobile.svg");
     background-repeat: no-repeat;
   }
 
-  .cover-text .container {
+  .container-text {
     width: 80%;
+    margin: auto;
   }
 
   .article-description {
@@ -131,6 +133,20 @@
     background-color: #fafafa;
   }
 
+  .line, .header-title .line {
+    padding-bottom: 50px;
+  }
+
+  .line {
+    border-top: 1px #fafafa solid;
+    width: 30%;
+  }
+
+  .header-title .line {
+    width: 13%;
+    border-top: 1px #837d87 solid;
+  }
+
   .nav-menu-icon {
     display: none;
   }
@@ -151,8 +167,68 @@
     justify-content: space-between;
   }
 
+  .cover {
+    flex-direction: row-reverse;
+    display: flex;
+    justify-content: right;
+  }
+
+  .cover {
+    background-image: url("../images/bg-pattern-intro-left-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: bottom left;
+  }
+
+  .cover-image {
+    background-image: url("../images/bg-pattern-intro-right-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: top right;
+  }
+
+  .cover-text {
+    background-color: #2d2640;
+    position: absolute;
+    z-index: -2;
+  }
+
+  .cover-image picture {
+    position: relative;
+    z-index: -1;
+  }
+
+  .container-text {
+    width: 40%;
+  }
+
+  .cover-image {
+    width: 50%;
+    padding: 100px 0px 150px;
+  }
+
+  .cover-title {
+    font-size: 4rem;
+  }
+
   .section-title {
     font-size: 3.5rem;
+    padding-bottom: 80px;
+  }
+
+  .cover-text {
+    padding: 7%;
+  }
+
+  .article-description {
+    padding-bottom: 100px;
+  }
+
+  .section-description {
+    width: 33%;
+  }
+
+  .all-sections figure {
+    margin: 0;
+    padding-bottom: 25px;
   }
 
   .banner {
@@ -236,7 +312,6 @@ footer h1 {
 }
 
 .cover-text {
-  background-color: #2d2640;
   color: #fafafa;
 }
 
@@ -262,10 +337,11 @@ footer h1 {
 }
 
 .fake-button a:hover {
-  border-color: transparent;
+  border: 1px solid transparent;
   color: #2d2640;
   background-color: #fafafa;
   font-weight: 700;
+  padding: 10px 40px;
 }
 
 .img-fluid {
@@ -276,8 +352,12 @@ footer h1 {
   display: block;
 }
 
+.footer-section a:hover {
+  text-decoration: underline;
+}
+
 .container {
-  width: 90%;
+  width: 85%;
   margin: auto;
 }
 

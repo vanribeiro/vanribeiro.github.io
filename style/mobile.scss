@@ -63,12 +63,14 @@
     .cover-text{
         padding: 100px 0px 100px;
         margin-top: -5px;
+        background-color: $dark-violet;
         background-image: url("/images/bg-pattern-intro-left-mobile.svg");
         background-repeat: no-repeat;
     }
 
-    .cover-text .container{
+    .container-text{
         width: 80%;
+        margin: auto;
     }
 
     .article-description{
