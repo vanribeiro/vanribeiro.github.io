@@ -1,0 +1,100 @@
+@media only screen and (max-width: 600px){
+
+    body{
+        text-align: center;
+    }
+
+    .top-nav{
+        width: 100vw;
+        background-color: $very-light-gray;
+        position: fixed;
+        z-index: 1;
+    }
+
+    .nav-logo h1{
+        font-size: 1.2rem;
+        text-align: left;
+    }
+
+    .nav-logo{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 40px;
+        padding: 5px;
+    }
+
+    .nav-all-links{
+        display: none;
+        position: relative;
+        width: 100vw;
+        height: 100%;
+        background-color: $very-dark-violet;
+        background-image: url("../images/bg-pattern-mobile-nav.svg");
+        background-repeat: no-repeat;
+        background-position: 80% 80%;
+        background-size: contain;
+        padding: 40px 0px;
+    }
+
+    .nav-all-links a{
+        display: block;
+        color: #fff;
+        font-size: 1.5rem;
+        font-weight: 700;
+        height: 30px;
+        padding: 14px 16px;
+        border: $very-dark-violet 2px solid;
+    }
+
+    .top-nav a:hover{
+        border: $very-light-gray 2px solid;
+    }
+
+    main, footer{
+        position: relative;
+        z-index: 0;
+    }
+
+    .banner{
+        margin-bottom: 50px;
+    }
+
+    .cover-text{
+        padding: 100px 0px 100px;
+        margin-top: -5px;
+        background-color: $dark-violet;
+        background-image: url("/images/bg-pattern-intro-left-mobile.svg");
+        background-repeat: no-repeat;
+    }
+
+    .container-text{
+        width: 80%;
+        margin: auto;
+    }
+
+    .article-description{
+        padding: 100px 0px 100px;
+    }
+
+    .section-title{
+        font-size: 2.5rem;
+        font-weight: 400;
+    }
+
+    .footer-brand{
+        padding: 50px 0px;
+        background-image: url("/images/bg-pattern-footer-mobile.svg");
+        background-repeat: no-repeat;
+    }
+
+    .footer-brand .container{
+        border-bottom: 1px solid $dark-grayish-violet;
+        padding-bottom: 80px;
+    }
+
+    .footer-title img{
+        padding-bottom: 15px;
+    }
+
+}
