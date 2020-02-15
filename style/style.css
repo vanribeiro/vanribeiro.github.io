@@ -151,6 +151,10 @@
     justify-content: space-between;
   }
 
+  .section-title {
+    font-size: 3.5rem;
+  }
+
   .banner {
     align-items: center;
   }
@@ -275,6 +279,10 @@ footer h1 {
 .container {
   width: 90%;
   margin: auto;
+}
+
+.section-title {
+  font-weight: inherit;
 }
 
 .footer-social-media path:hover {
