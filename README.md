@@ -2,7 +2,7 @@
 
 Site currículo e portfolio de projetos.
 
-## Tecnoligias Utilizadas 💻
+## Tecnologias Utilizadas 💻
 
 A primeira versão deste site foi publicada em outubro de 2018. Ela foi codificada utilizando `Twitter Bootstrap v4.1.3` e algumas costumizações no `HTML` e `CSS`.
 
