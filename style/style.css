@@ -1,0 +1,16 @@
+body, main, footer, header, h1, h2, div, img {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+/*# sourceMappingURL=style.css.map */
