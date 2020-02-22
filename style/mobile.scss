@@ -1,0 +1,21 @@
+@import 'variables.scss';
+
+@media only screen and(max-width:600px){
+
+    main .container{
+        padding: 70px 0 25px;
+    }
+
+    section .container{
+        padding: 5px 0 5px;
+    }
+
+    section{
+        width: 70%;
+    }
+
+    .all-content{
+        padding-bottom: 50px;
+    }
+
+}

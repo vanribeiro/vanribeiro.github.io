@@ -1,10 +1,60 @@
 @import 'mobile.scss';
 @import 'desktop.scss';
+@import 'variables.scss';
 
-body, main, footer, header, h1, h2, div, img{
+body, main, article, section,
+footer, header, h1, h2, div, img{
     padding: 0;
     margin: 0;
     border: 0;
+}
+
+body{
+    font-family: $poppins-font;
+    background-color: hsl(0, 0%, 98%);
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+section{
+    box-shadow: 2px 2px 15px $grayish-blue;
+    margin: 25px;
+    padding: 25px;
+    border-top: solid;
+    border-top-width: 5px;
+    border-radius: 5px;
+}
+
+section:nth-child(1){
+    border-color: $cyan;
+}
+
+section:nth-child(2){
+    border-color: $red;
+}
+
+section:nth-child(3){
+    border-color: $blue;
+}
+
+section:nth-child(4){
+    border-color: $orange;
+}
+
+h1:nth-child(1){
+    font-weight: 200;
+}
+
+h1, h2{
+    color: $dark-blue;
+}
+
+
+p{
+    color: $grayish-blue;
 }
 
 
