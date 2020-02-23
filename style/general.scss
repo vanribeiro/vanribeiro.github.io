@@ -3,7 +3,8 @@
 @import 'variables.scss';
 
 body, main, article, section,
-footer, header, h1, h2, div, img{
+footer, header, h1, h2, div,
+img, figure{
     padding: 0;
     margin: 0;
     border: 0;
@@ -14,8 +15,11 @@ body{
     background-color: hsl(0, 0%, 98%);
 }
 
+.header-page{
+    padding: 30px 0 20px;
+}
+
 .container{
-    width: 80%;
     margin: auto;
 }
 
@@ -28,20 +32,31 @@ section{
     border-radius: 5px;
 }
 
+header h1, header p{
+    text-align: center;
+}
+
+
+figure{
+    width: auto;
+    display: flex;
+    justify-content: right;
+}
+
 section:nth-child(1){
     border-color: $cyan;
 }
 
-section:nth-child(2){
+.col-cards section:nth-child(1){
     border-color: $red;
 }
 
-section:nth-child(3){
-    border-color: $blue;
+.col-cards section:nth-child(2){
+    border-color: $orange;
 }
 
-section:nth-child(4){
-    border-color: $orange;
+section:last-child{
+    border-color: $blue;
 }
 
 h1:nth-child(1){
@@ -52,11 +67,9 @@ h1, h2{
     color: $dark-blue;
 }
 
-
 p{
     color: $grayish-blue;
 }
-
 
 .attribution{
     font-size: 11px; text-align: center;

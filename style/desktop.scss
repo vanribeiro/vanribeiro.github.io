@@ -1,0 +1,25 @@
+@import 'variables.scss';
+
+@media only screen and(min-width:992px){
+
+    article{
+        display: flex;
+    }
+
+    .card:first-child, .card:last-child{
+        width: 33%;
+    }
+
+    .col-cards .card{
+        width: auto;
+    }
+
+    .container{
+        width: 90%;
+    }
+
+    section:first-child, section:last-child{
+        height: min-content;
+        align-self: center;
+    }
+}
