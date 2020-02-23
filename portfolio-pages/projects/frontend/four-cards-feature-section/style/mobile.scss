@@ -2,20 +2,21 @@
 
 @media only screen and(max-width:600px){
 
-    main .container{
-        padding: 70px 0 25px;
+    .container .header-page{
+        width: 80%;
+        margin: auto;
     }
-
+    
     section .container{
         padding: 5px 0 5px;
     }
 
     section{
-        width: 70%;
+        margin-bottom: 50px
     }
 
     .all-content{
         padding-bottom: 50px;
-    }
+    }   
 
 }

@@ -3,9 +3,11 @@
 /* Neutral */
 /* Fonts */
 @import url("https://fonts.googleapis.com/css?family=Poppins:200,400,600&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,400,600&display=swap");
 @media only screen and (max-width: 600px) {
-  main .container {
-    padding: 70px 0 25px;
+  .container .header-page {
+    width: 80%;
+    margin: auto;
   }
 
   section .container {
@@ -13,7 +15,7 @@
   }
 
   section {
-    width: 70%;
+    margin-bottom: 50px;
   }
 
   .all-content {
@@ -23,8 +25,34 @@
 /* Primary */
 /* Neutral */
 /* Fonts */
+@media only screen and (min-width: 992px) {
+  article {
+    display: flex;
+  }
+
+  .card:first-child, .card:last-child {
+    width: 33%;
+  }
+
+  .col-cards .card {
+    width: auto;
+  }
+
+  .container {
+    width: 90%;
+  }
+
+  section:first-child, section:last-child {
+    height: min-content;
+    align-self: center;
+  }
+}
+/* Primary */
+/* Neutral */
+/* Fonts */
 body, main, article, section,
-footer, header, h1, h2, div, img {
+footer, header, h1, h2, div,
+img, figure {
   padding: 0;
   margin: 0;
   border: 0;
@@ -35,8 +63,11 @@ body {
   background-color: #fafafa;
 }
 
+.header-page {
+  padding: 30px 0 20px;
+}
+
 .container {
-  width: 80%;
   margin: auto;
 }
 
@@ -49,20 +80,30 @@ section {
   border-radius: 5px;
 }
 
+header h1, header p {
+  text-align: center;
+}
+
+figure {
+  width: auto;
+  display: flex;
+  justify-content: right;
+}
+
 section:nth-child(1) {
   border-color: #45d3d3;
 }
 
-section:nth-child(2) {
+.col-cards section:nth-child(1) {
   border-color: #ea5353;
 }
 
-section:nth-child(3) {
-  border-color: #549ef2;
+.col-cards section:nth-child(2) {
+  border-color: #fcaf4a;
 }
 
-section:nth-child(4) {
-  border-color: #fcaf4a;
+section:last-child {
+  border-color: #549ef2;
 }
 
 h1:nth-child(1) {
