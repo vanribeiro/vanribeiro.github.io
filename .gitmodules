@@ -1,4 +1,0 @@
-[submodule "blog/public"]
-	path = blog/public
-	url = https://github.com/vanribeiro/blog.git
-	branch = master
