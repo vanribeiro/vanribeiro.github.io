@@ -390,10 +390,6 @@ a, .menu-icon{
         max-width: 100%;
     }
 
-    [class*="col-"]{
-        width: 100%;
-    }
-
     .logo{
         width: 100px;
         height: 100px;
@@ -428,6 +424,17 @@ a, .menu-icon{
         border-radius: 2px;
     }
 
+    .my-social-medias .row{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 15px 0 15px;
+    }
+
+    .my-social-medias .col-4{
+        text-align: center;
+    }
+
     .menu{
         height: 100%;
     }
@@ -438,6 +445,10 @@ a, .menu-icon{
         padding-bottom: 10px;
         width: 50px;
         height: 50px;
+    }
+
+    .last-jobs{
+        padding-bottom: 10%;
     }
 }
 
@@ -517,7 +528,6 @@ a, .menu-icon{
         background-color: #404040 ;
         padding: 5px;
         margin: -5px;
-        box-shadow: 3px 3px 10px #000000;
         text-shadow: 1px 1px 5px #000000;
         font-size: 2.5rem;
     }
@@ -529,7 +539,7 @@ a, .menu-icon{
 
     .row{
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
         align-items: center;
         margin: 15px 0 15px;
     }
@@ -552,6 +562,12 @@ a, .menu-icon{
         width: 100px;
     }
 
+}
+
+@media only screen and (max-width: 699px){
+    [class*="col-"]{
+        width: 100%;
+    }
 }
 
 @media only screen and (min-width: 700px){
@@ -599,6 +615,22 @@ a, .menu-icon{
         padding-left: 7%;
         padding-right: 7%;
     }
+
+    .text-title{
+        font-size: 1.5rem;
+        color: #B56A7A;
+        background-color: #404040 ;
+        padding: 5px;
+        text-align: center;
+        border-radius: 2px;
+    }
+
+    
+    .content-page{
+        padding-bottom: 15%;
+        display: flex;
+        justify-content: space-around;
+    }
 }
 
 @media only screen and (min-width: 800px){
@@ -638,6 +670,10 @@ a, .menu-icon{
         padding: 5px 5px;
         border-radius: 5px;
     }
+
+    .text-title{
+        font-size: 1.6rem;
+    }
 }
 
 @media only screen and (min-width: 1000px){
@@ -646,15 +682,9 @@ a, .menu-icon{
         height: 350px;
     }
 
-    .content-page{
-        padding-bottom: 15%;
-        display: flex;
-        justify-content: space-around;
-    }
 
     .last-jobs, .my-social-medias{
-        background-color: #ebebeb57;
-        box-shadow: #404040 5px 5px 20px;
+        border: 2px solid #404040;
         padding: 5px 5px;
     }
 
