@@ -31,6 +31,10 @@ function tagStatus(){
                     statusTag[i].style.backgroundColor = '#edac2a';
                     statusTag[i].style.color = '#404040';
                 break;
+            case 'a ser iniciado':
+                statusTag[i].style.backgroundColor = '#5f8dd3';
+                statusTag[i].style.color = '#ebebeb';
+                break;
             case 'iniciado':
                     statusTag[i].style.backgroundColor = '#5fb2bb';
                     statusTag[i].style.color = '#404040';
