@@ -152,6 +152,7 @@ a, .menu-icon{
     text-shadow: 2px 2px 15px #1a1a1a;
     padding: 5px;
     font-size: 2.2rem;
+    letter-spacing: 0.15em;
 }
 
 .ham-icon:hover{
@@ -298,12 +299,25 @@ a, .menu-icon{
     border-radius: 5px;
 }
 
-.front-end header, .back-end header, .others header{
+.front-end header h1, .back-end header h1, .others header h1{
     border-bottom: #404040 2px solid;
     padding: 5px 5px;
     text-shadow: #B56A7A 2px 2px 2px;
     letter-spacing: 0.2rem;
     font-size: 2rem;
+}
+
+.front-end header p{
+    margin-top: 15px;
+}
+
+.front-end header a{
+    color: #404040;
+    font-weight: bold;
+}
+
+.front-end header a:hover{
+    text-decoration: underline;
 }
 
 .front-end, .back-end, .others{
@@ -367,7 +381,7 @@ a, .menu-icon{
         font-size: 1.5rem;
     }
 
-    .front-end header, .back-end header, .others header{
+    .front-end header h1, .back-end header h1, .others header h1{
         letter-spacing: 0.2rem;
         font-size: 1.5rem;
     }
