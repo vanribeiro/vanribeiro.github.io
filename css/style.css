@@ -150,6 +150,7 @@ a, .menu-icon{
 }
 
 .title-menu-page{
+    cursor: auto;
     color: #B56A7A;
     text-shadow: 2px 2px 15px #1a1a1a;
     padding: 5px;
@@ -204,8 +205,7 @@ a, .menu-icon{
 }
 
 .menu-rwd:hover{
-    background-color: #ebebeb;
-    text-shadow: 2px 4px 4px #4040407c;
+    text-decoration: underline;
 }
 
 .menu-rwd, .btn-menu{
@@ -223,8 +223,10 @@ a, .menu-icon{
 }
 
 .text-title{
+    padding: 5px 0;
     margin-bottom: 15px;
-    text-align: center;
+    border-radius: 2px;
+    border-bottom: 2px solid #404040;
 }
 
 .icon-link-social-media{
@@ -236,8 +238,7 @@ a, .menu-icon{
 }
 
 .intro-txt{
-    text-align: center;
-    padding: 15px 0 15px;
+    text-align: left;
 }
 
 .row-grid, .column-grid{
@@ -322,10 +323,6 @@ a, .menu-icon{
     text-decoration: underline;
 }
 
-.front-end, .back-end, .others{
-    padding: 5px 15px;
-}
-
 .back-end-box, .front-end-box, .others-box, 
 .front-end-box figcaption, .back-end-box figcaption, .others-box figcaption{
     display: flex;
@@ -367,6 +364,28 @@ a, .menu-icon{
 .technologies a{
     color: #404040;
     text-decoration: underline;
+}
+
+.content-page__section{
+    margin-bottom: 4px;
+}
+
+.content-page__section__container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.content-page__section__container .link-group{
+    padding: 15px;
+    text-align: left;
+}
+
+#contact-me .row{
+    padding: 0 5px;
+}
+
+.link-list .sites{
+    margin-bottom: 18px;
 }
 
 @media only screen and (max-width: 600px){
@@ -433,19 +452,15 @@ a, .menu-icon{
 
     .text-title{
         font-size: 1.6rem;
-        color: #B56A7A;
-        background-color: #404040 ;
-        text-shadow: 1px 1px 5px #1a1a1a;
-        padding: 5px;
-        text-align: center;
-        border-radius: 2px;
+        padding: 15px 0;
     }
 
-    .my-social-medias .row{
+    #contact-me .row{
         display: flex;
         justify-content: space-evenly;
         align-items: center;
-        margin: 15px 0 15px;
+        padding: 0;
+        margin: 4px 0 4px;
     }
 
     .my-social-medias .col-4{
@@ -457,11 +472,8 @@ a, .menu-icon{
     }
 
     .icon-link-social-media{
-        vertical-align: middle;
-        padding-left: 5px;
-        padding-bottom: 10px;
-        width: 50px;
-        height: 50px;
+        width: 40px;
+        height: 40px;
     }
 
     .last-jobs{
@@ -470,6 +482,12 @@ a, .menu-icon{
 }
 
 @media only screen and (min-width: 601px){
+    
+    .main{
+        display: flex;
+        align-items: center;
+        padding: 0;
+    }
 
     .card{
         width: 100%;
@@ -491,7 +509,6 @@ a, .menu-icon{
         font-size: 0.9rem;
         height: 100px;
     }
-
 
     .column-grid .caption-img{
         position: absolute;
@@ -522,7 +539,7 @@ a, .menu-icon{
     .home{
         display: flex;
         justify-content: space-around;
-        padding: 1% 0 1%;
+        align-items: center;
     }
 
     .menu-page{
@@ -541,11 +558,6 @@ a, .menu-icon{
     }
 
     .text-title{
-        color: #B56A7A;
-        background-color: #404040 ;
-        padding: 5px;
-        margin: -5px;
-        text-shadow: 1px 1px 5px #000000;
         font-size: 2.5rem;
     }
 
@@ -560,10 +572,11 @@ a, .menu-icon{
         align-items: center;
         margin: 15px 0 15px;
     }
-
-    .link-group{
-        padding: 15px;
-        text-align: center;
+    
+    #contact-me .row{
+        justify-content: flex-start;
+        padding: 0;
+        margin: 4px 0 4px;
     }
 
     .logo-img{
@@ -593,6 +606,22 @@ a, .menu-icon{
 
 @media only screen and (min-width: 700px){
 
+    #contact-me .main,
+    #frontend-index .main{
+        height: calc(100vh - 150px);
+    }
+
+    #index-home .main{
+        height: calc(100vh - 208px);
+    }
+    
+    #index-portfolio-page .main{
+        height: calc(100vh - 220px);
+    }
+
+    .content-page__section{
+        flex: 1;
+    }
 
     .card{
         height: 210px;
@@ -640,11 +669,6 @@ a, .menu-icon{
 
     .text-title{
         font-size: 1.5rem;
-        color: #B56A7A;
-        background-color: #404040 ;
-        padding: 5px;
-        text-align: center;
-        border-radius: 2px;
     }
 
     .last-jobs, .social-medias, .others-links{
@@ -653,9 +677,9 @@ a, .menu-icon{
 
     
     .content-page{
-        padding-bottom: 15%;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
+        flex-direction: column;
     }
 }
 
@@ -691,11 +715,6 @@ a, .menu-icon{
     .header-page-title{
         width: 90%;
     }
-    
-    .last-jobs, .my-social-medias{
-        padding: 5px 5px;
-        border-radius: 5px;
-    }
 
     .text-title{
         font-size: 1.6rem;
@@ -722,4 +741,32 @@ a, .menu-icon{
         height: 280px;
     }
 
+    .btn-menu {
+        border: 1px solid transparent;
+        color: #B56A7A;
+    }
+
+    .btn-menu:hover {
+        background-color: transparent;
+        border-color:#404040;
+        color: #B56A7A;
+    }
+
+}
+
+@media only screen and (min-width: 1490px){
+    .technologies p{
+        padding: 0;
+    }
+
+    .column-grid {
+        max-width: 42%;
+    }
+}
+
+@media only screen and (min-width: 1800px){
+
+    .column-grid {
+        max-width: 36%;
+    }
 }
