@@ -24,7 +24,7 @@ O _design_, bem como a logo, também foram criadas por mim, utilizando `Figma` e
 - InkScape
 ```
 
-## [Projetos](https://vanribeiro.github.io/portfolio.html) 📖
+## [Projetos](https://vanribeiro.github.io/portfolio-pages/projects/frontend.html) 📖
 
 Tenho tentado aprender o máximo possível através de desafios. Por isso, busco atualizar essa seção com bastante frequência. Fique atento(a)! 😉
 
