@@ -380,6 +380,12 @@ a, .menu-icon{
     text-align: left;
 }
 
+.contact-me__title--2022{
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: normal;
+    font-size: 0.875em;
+}
+
 #contact-me .row{
     padding: 0 5px;
 }
