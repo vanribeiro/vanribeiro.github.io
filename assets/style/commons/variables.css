@@ -1,0 +1,20 @@
+:root{
+    --background-color: #1C1C1C;
+    --title-color: #ECA769;
+    --link-color: #ECA769;
+    --highlight-color: #ECA769;
+    --hover-background-color: #ECA769;
+    --border-color: #ECA769;
+    --subtitle-color: #E5E5E5;
+    --text-color: #f8f8f8;
+    --image-border: #f8f8f8;
+    --button-text-color: #EEEEEE;
+    
+    --text-weight: 300;
+    --button-text-weight: 700;
+    --font-subtitle: 'Bebas Neue', cursive;
+    --font-text: 'Lato', sans-serif;
+    --font-title: 'Style Script', cursive;
+
+    --transition-link: all 0.3s ease-in-out;
+}

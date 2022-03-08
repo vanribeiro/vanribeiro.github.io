@@ -2,66 +2,60 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="shortcut icon" href="img/icones/novo-icone-256px.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Van Ribeiro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400&family=Style+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/style/commons/reset.css">
+    <link rel="stylesheet" href="./assets/style/app.css">
+    <title>Vanessa Ribeiro - Front-End Developer</title>
 </head>
-<body id="index-home">
-    <div class="header-page">
-        <div class="container">
-            <div class="header-group ">
-                <div class="logo-img">
-                    <a href="/">
-                        <img class="logo img-fluid" src="img/icones/novo-icone-256px.png" alt="Van Ribeiro Logo">
-                    </a>
+<body>
+    <main class="home__profile">
+        <div class="container container--profile">
+            <section class="profile">
+                <div class="profile__main">
+                    <figure class="profile__image-container">
+                        <img class="profile__image img-responsive" src="./assets/img/me/vanessa-ribeiro.png" alt="Minha foto de perfil">
+                    </figure>
+                    <article class="profile__content">
+                        <header class="profile__content__header">
+                            <h1 class="profile__content__title">vanessa ribeiro</h1>
+                            <h2 class="profile__content__subtitle">front-end developer</h2>
+                        </header>
+                        <div class="profile__content__text">
+                            <p>
+                                Alguém que ama tecnologias web e busca melhorar suas habilidades de programação e solução de problemas, resolvendo desafios e criando pequenos projetos. Possui boa capacidade de análise, raciocínio e criatividade.
+                            </p>
+                        </div>
+                    </article>
                 </div>
-                <div class="header-page-title">
-                    <a class="link-title col-4" href="/">
-                        <h1 class="header-page-title">VAN RIBEIRO</h1>
-                        <p>desenvolvedora web front-end</p>
-                    </a>
+                <div class="profile__footer">
+                    <div class="profile__footer__container">
+                        <div class="profile__footer__button-container">
+                            <a class="button button--outlined" href="/downloads/cv-vanessa-ribeiro.pdf" download="cv-vanessa-ribeiro.pdf">Currículo</a>
+                        </div>
+                        <div class="profile__footer__icons-container">
+                            <a class="profile__footer__icon-link" href="https://www.linkedin.com/in/vanribeiro" >
+                                <img class="profile__footer__icon" src="./assets/img/icons/social-media/instagram.png" alt="Icone Instagram">
+                            </a>
+                            <a class="profile__footer__icon-link" href="https://www.instagram.com/vanribeiro.dev" >
+                                <img class="profile__footer__icon" src="./assets/img/icons/social-media/linkedin.png" alt="Icone LinkedIn">
+                            </a>
+                            <a class="profile__footer__icon-link" href="https://github.com/vanribeiro" >
+                                <img class="profile__footer__icon" src="./assets/img/icons/social-media/github.png" alt="Icone GitHub">
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <nav class="social-medias">
-                    <a href="https://github.com/vanribeiro" target="_blank">
-                        <img class="icon-link-social-media" src="img/social-media/png/github-cassis.png" alt="Ícone do GitHub" title="@varibeiro" />
-                    </a>
-                    <a href="https://www.instagram.com/vanribeiro.dev" target="_blank">
-                        <img class="icon-link-social-media" src="img/social-media/png/instagram-cassis.png" alt="Ícone do Instagram" title="@vanribeiro.dev">
-                    </a>
-                    <a href="https://codepen.io/vanribeiro/" target="_blank">
-                        <img class="icon-link-social-media" src="img/social-media/png/codepen-cassis.png" alt="Ícone do CodePen" title="@vanribeiro" />
-                    </a>
-                    <a href="https://twitter.com/vanribeirodev" target="_blank">
-                        <img class="icon-link-social-media" src="img/social-media/png/twitter_cassis.png" alt="Ícone do Twitter" title="@vanribeirodev">
-                    </a>
-                </nav>
-            </div>
-        </div>
-    </div>
-    <main class="main">
-        <div class="container">
-            <div class="home">
-                <div class="short-bio">
-                    <img class="img-bio img-fluid col-5" src="img/minha-foto-perfil.png" alt="Minha foto de perfil" >
-                </div>
-                <div class="menu-page">
-                    <p class="txt-bio">
-                        Uma desenvolvedora web em frequente construção, que gosta de unir criatividade e tecnologia.
-                    </p>
-                    <a class="btn-menu" href="portfolio-pages/projects/frontend.html">Portfolio</a>
-                    <a class="btn-menu" href="encontre-me.html" title="Como entrar comigo">Encontre-me!</a>
-                    <a class="btn-menu" href="/downloads/cv-vanessa-ribeiro.pdf" download="cv-vanessa-ribeiro.pdf">Currículo</a>
-                </div>
-            </div>
+            </section>
         </div>
     </main>
-    <footer>
-        <div class="container">
-            <div class="footer"></div>
-        </div>
+    <footer class="footer">
+        <p>
+            © 2022 - <a class="link" href="mailto:vanribeiro.dev@gmail.com">vanessa ribeiro</a>
+        </p>
     </footer>
-    <script type="module" src="./js/main.js"></script>
 </body>
 </html>

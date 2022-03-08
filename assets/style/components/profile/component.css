@@ -1,0 +1,62 @@
+@import url('./profile-content.css');
+@import url('./profile-image-container.css');
+@import url('./profile-image.css');
+@import url('./profile-footer.css');
+
+.container--profile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile{
+    max-width: 780px;
+}
+
+.profile__main{
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width: 767px){
+
+    .profile__main{
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (min-width: 600px){
+    
+    .profile{
+        width: 75%;
+    }
+
+}
+
+@media screen and (min-width: 768px){
+
+    .profile__main{
+        column-gap: 30px;
+    }
+
+}
+
+@media screen and (min-width: 992px){
+  
+    .profile__main{
+        column-gap: 53px;
+    }
+
+    .profile{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    
+    .profile{
+        width: calc(100% - 280px);
+    }
+
+}

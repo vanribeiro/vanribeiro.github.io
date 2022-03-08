@@ -1,35 +1,54 @@
-# [vanribeiro.github.io v2.0](https://vanribeiro.github.io/)
+# Site portfolio - 2022
 
-Site currículo e portfolio de projetos.
+## Fases
 
-## Tecnologias Utilizadas 💻
+Quebrei a entrega deste portfolio em fases:
+- Fase 00: Desenhar novas telas
+- Fase 01: Home
+- Fase 02: Últimos Commits
+- Fase 03: Habilidades Técnicas
+- Fase 04: Contatos
 
-A primeira versão deste site foi publicada em outubro de 2018. Ela foi codificada utilizando `Twitter Bootstrap v4.1.3` e algumas costumizações no `HTML` e `CSS`.
+### Fase 00 - Desenhar novas telas:
 
-Nesta edição/versão, em 2020, eu optei por utilizar `HTML`, `CSS` e `JavaScript` puros. Também tentei me utilizar ao máximo das _features_ do `HTML5` e `CSS3`.
+*status*: Parcialmente finalizada
 
-Meu objetivo aqui era, e ainda é, construir uma base sólida nessas _skills_. É possível que, para aprender algum `framework JavaScript`, eu o refaça futuramente, mas, por enquanto, seguimos no _Vanilla Mode_ por aqui. 😄
+- Desenhei novas telas.
+- [Link do Layout](https://www.figma.com/file/1Y7L3A6rmKyWwLMCxHQGTU/Meu-Site-Portfolio---2022?node-id=12%3A235)
+- Ainda falta desenhar a tela de Últimos Commits
 
-O _design_, bem como a logo, também foram criadas por mim, utilizando `Figma` e `InkScape`, respectivamente.
+### Fase 01 - Home:
 
-### Resumindo as tecnologias:
+*status*: Parcialmente finalizada
 
-```
+- Comecei a codificar pela home, pois é o que vou publicar primeiro.
+
+### Fase 02 - Últimos Commits:
+
+*status*: Não iniciada
+
+### Fase 03 - Habilidades Técnicas:
+
+*status*: Não iniciada
+
+### Fase 02 - Contatos:
+
+*status*: Não iniciada
+
+
+<hr style="width: 100%; height: 1px; background-color: #5e5e5ebf; border: 0">
+
+## Tecnologias
+
+### Linguagens
 - HTML5
 - CSS3
-- JavaScript
-- Git/GitHub
-- GitHub Pages
+
+### Conceitos
+- Design Responsivo
+- Mobile Fisrt
+- BEM
+
+### Ferramentas
 - Figma
-- InkScape
-```
-
-## [Projetos](https://vanribeiro.github.io/portfolio-pages/projects/frontend.html) 📖
-
-Tenho tentado aprender o máximo possível através de desafios. Por isso, busco atualizar essa seção com bastante frequência. Fique atento(a)! 😉
-
-Por enquanto, a subseção mais ativa é a de [Front-End](https://vanribeiro.github.io/portfolio-pages/projects/frontend.html), pois é onde tenho buscado me especializar, mas tenho planejado voltar a criar alguns conteúdos e atualizar outras seções.
-
-## [Encontre-me!](https://vanribeiro.github.io/encontre-me.html) 😉
-
-Se deseja falar comigo, você pode encontrar todos os meus links no [site](https://vanribeiro.github.io/), na seção [Encontre-me!](https://vanribeiro.github.io/encontre-me) ou pode me escrever, através do email [vanribeiro.dev@gmail.com](mailto:vanribeiro.dev@gmail.com). 
+- VS Code

@@ -1,0 +1,37 @@
+/* @import url('./commons/reset.css'); */
+@import url('./commons/variables.css');
+@import url('./commons/container.css');
+@import url('./components/profile/component.css');
+@import url('./components/button.css');
+@import url('./components/footer.css');
+
+body{
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-size: 24px;
+    font-family: var(--font-text);
+    font-weight: 300;
+}
+
+a{
+    text-decoration: none;
+}
+
+footer{
+    font-size: 12px;
+}
+
+.link{
+    color: var(--link-color);
+}
+
+.img-responsive{
+    max-width: 100%;
+}
+
+.home__profile{
+    height: calc(100vh - 16px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
