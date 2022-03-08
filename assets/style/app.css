@@ -1,0 +1,53 @@
+@import url('./commons/container.css');
+@import url('./components/profile.css');
+@import url('./components/button.css');
+@import url('./components/footer.css');
+
+:root{
+    --background-color: #1C1C1C;
+    --title-color: #ECA769;
+    --link-color: #ECA769;
+    --highlight-color: #ECA769;
+    --border-color: #ECA769;
+    --subtitle-color: #E5E5E5;
+    --text-color: #f8f8f8;
+    --image-border: #f8f8f8;
+    --button-text-color: #EEEEEE;
+    
+    --text-weight: 300;
+    --button-text-weight: 700;
+    --font-subtitle: 'Bebas Neue', cursive;
+    --font-text: 'Lato', sans-serif;
+    --font-title: 'Style Script', cursive;
+}
+
+body{
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-size: 24px;
+    font-family: var(--font-text);
+    font-weight: 300;
+}
+
+a{
+    text-decoration: none;
+}
+
+footer{
+    font-size: 14px;
+}
+
+.link{
+    color: var(--link-color);
+}
+
+.img-responsive{
+    max-width: 100%;
+}
+
+.home__profile{
+    height: 95vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
