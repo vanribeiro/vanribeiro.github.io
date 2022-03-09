@@ -52,3 +52,7 @@ Quebrei a entrega deste portfolio em fases:
 ### Ferramentas
 - Figma
 - VS Code
+
+## Libs, Plugins e Frameworks
+- [Language colors](https://github.com/quickutils/language-colors);
+- [GlideJS](https://glidejs.com/)
