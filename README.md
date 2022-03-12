@@ -36,7 +36,7 @@ Quebrei a entrega deste portfolio em fases:
 *status*: Não iniciada
 
 
-<hr style="width: 100%; height: 1px; background-color: #5e5e5ebf; border: 0">
+<!-- <hr style="width: 100%; height: 1px; background-color: #5e5e5ebf; border: 0"> -->
 
 ## Tecnologias
 
@@ -56,3 +56,7 @@ Quebrei a entrega deste portfolio em fases:
 ## Libs, Plugins e Frameworks
 - [Language colors](https://github.com/quickutils/language-colors);
 - [GlideJS](https://glidejs.com/)
+
+## Ideias:
+- Adicionar formulário de contato, usando uma api para formulário. 
+    - [Formspark](https://formspark.io/);

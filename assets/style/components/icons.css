@@ -1,0 +1,17 @@
+i{
+    display: inline-block;
+}
+
+i.github-repo__color{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+i.github-repos__icon{
+    background-image: url('./../assets/img/icons/pages/github.svg');
+    width: 18px;
+    height: 18px;
+    background-size: contain;
+    background-position: center;
+}
