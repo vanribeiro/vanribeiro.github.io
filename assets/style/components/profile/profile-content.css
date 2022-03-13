@@ -1,11 +1,11 @@
 .profile__content__title{
     color: var(--title-color);
-    font-family: var(--font-title);
+    font-family: var(--home-font-title);
 }
 
 .profile__content__subtitle{
     color: var(--subtitle-color);
-    font-family: var(--font-subtitle);
+    font-family: var(--home-font-subtitle);
     letter-spacing: 0.09em;
     font-size: 24px;
 }

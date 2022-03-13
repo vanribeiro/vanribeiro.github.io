@@ -1,0 +1,32 @@
+.progress-bar__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.progress-bar{
+    width: 88%;
+    border-radius: 0;
+    height: 6px;
+    border: none;
+}
+
+.progress-bar {
+    color: #85D178;
+  }
+  
+.progress-bar::-moz-progress-bar {
+    background: #85D178;
+}
+
+.progress-bar::-webkit-progress-value {
+    background: #85D178;
+}
+
+.progress-bar::-webkit-progress-bar {
+    background: #85D178;
+}
+
+.progress-bar__number{
+    font-size: 0.75em;
+}

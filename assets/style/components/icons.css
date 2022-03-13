@@ -1,0 +1,34 @@
+i{
+    display: inline-block;
+}
+
+i.icons{
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+i.humburger__icon{
+    background-image: url('./../../img/icons/hamburger.svg');
+    width: 37px;
+    height: 37px;
+}
+
+i.github-repos__book-icon{
+    background-image: url('./../../img/icons/pages/github-book.svg');
+    width: 14px;
+    height: 14px;
+}
+
+i.github-repos__logo-icon{
+    background-image: url('./../../img/icons/pages/github.svg');
+    width: 18px;
+    height: 18px;
+}
+
+i.github-repo__color{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 4px;
+}
