@@ -4,17 +4,24 @@
     --link-color: #ECA769;
     --highlight-color: #ECA769;
     --hover-background-color: #ECA769;
+    --hover-text-color: #ECA769;
     --border-color: #ECA769;
     --subtitle-color: #E5E5E5;
     --text-color: #f8f8f8;
     --image-border: #f8f8f8;
     --button-text-color: #EEEEEE;
+    --card-background-color: #242424;
+    --card-box-shadow-color: #000000;
     
     --text-weight: 300;
     --button-text-weight: 700;
-    --font-subtitle: 'Bebas Neue', cursive;
     --font-text: 'Lato', sans-serif;
-    --font-title: 'Style Script', cursive;
+    --home-font-subtitle: 'Bebas Neue', cursive;
+    --home-font-title: 'Style Script', cursive;
+
+    --pages-font-title: 'Bebas Neue', cursive;
+    --pages-font-subtitle: 'Lato', sans-serif;
+
 
     --transition-link: all 0.3s ease-in-out;
 }

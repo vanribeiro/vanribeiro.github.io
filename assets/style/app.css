@@ -1,14 +1,12 @@
-/* @import url('./commons/reset.css'); */
 @import url('./commons/variables.css');
 @import url('./commons/container.css');
-@import url('./components/profile/component.css');
-@import url('./components/button.css');
 @import url('./components/footer.css');
+@import url('./components/icons.css');
 
 body{
     background-color: var(--background-color);
     color: var(--text-color);
-    font-size: 24px;
+    font-size: 16px;
     font-family: var(--font-text);
     font-weight: 300;
 }
@@ -17,13 +15,14 @@ a{
     text-decoration: none;
 }
 
+.link{
+    color: var(--link-color);
+}
+
 footer{
     font-size: 12px;
 }
 
-.link{
-    color: var(--link-color);
-}
 
 .img-responsive{
     max-width: 100%;

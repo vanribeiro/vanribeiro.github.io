@@ -1,0 +1,16 @@
+.course-in-progress__item{
+    margin: 6px auto;
+    height: 65px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.course-in-progress__item-header a{
+    color: var(--text-color);
+}
+
+.courses-in-progress__item-title{
+    font-weight: 400;
+    font-size: 0.875em;
+}

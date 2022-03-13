@@ -8,56 +8,95 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400&family=Style+Script&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./../assets/style/commons/reset.css">
-    <link rel="stylesheet" href="./../assets/style/app.css">
     <link rel="stylesheet" href="./../assets/style/libs/language-colors.css">
-    <link rel="stylesheet" href="/node_modules/@glidejs/glide/dist/css/glide.core.min.css">
+    <!-- <link rel="stylesheet" href="/node_modules/@glidejs/glide/dist/css/glide.core.min.css"> -->
+    <link rel="stylesheet" href="./../assets/style/app.css">
+    <link rel="stylesheet" href="./../assets/style/pages/commits.css">
     <title>Vanessa Ribeiro - Commits</title>
 </head>
 <body>
     <header class="header-page">
-        <div class="header-page__container">
-            <h1 class="header-page__title">Commits</h1>
-            <h2 class="header-page__subtitle">Últimos posts e atualizações</h2>
-        </div>
-        <div class="header__menu-icon">
-            <span>
-                <img src="./../assets/img/icons/hamburger.svg" alt="Ícone de menu">
-            </span>
+        <div class="header-page__container container">
+            <div class="header-page__titles">
+                <h1 class="header-page__title">Commits</h1>
+                <h2 class="header-page__subtitle">Últimos posts e atualizações</h2>
+            </div>
+            <div class="header-page__menu-icon__container">
+                <i class="humburger__icon icons"></i>
+            </div>
+            <nav class="header-page__menu">
+                <ul class="header-page__list">
+                    <li class="header-page__list-item">
+                        <a class="header-page__link" href="/">Home</a>
+                    </li>
+                    <li class="header-page__list-item">
+                        <a class="header-page__link" href="/pages/commits.html">Commits</a>
+                    </li>
+                    <li class="header-page__list-item">
+                        <a class="header-page__link" href="/pages/contato.html">Contato</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
     </header>
     <main>
-        <section class="github-repos">
-            <div class="github-repos__container">
-                <header class="github-repos__header">
-                    <h3 class="github-repos__title">
-                        <i class="github-repos__icon"></i>
-                        github
-                    </h3>
+        <div class="container">
+            <section class="github-repos">
+                <div class="github-repos__container">
+                    <header class="github-repos__header">
+                        <h3 class="github-repos__title">
+                            <i class="github-repos__logo-icon icons"></i>
+                            github
+                        </h3>
+                    </header>
+                    <section class="github-repos__cards"></section>
+                    <div class="github-repos__footer">
+                        <a href="https://github.com/vanribeiro?tab=repositories" target="_blank" rel="noopener">ver todos os repositórios</a>
+                    </div>
+                </div>
+            </section>
+            <section class="courses-in-progress">
+                <header class="courses-in-progress__header">
+                    <h3 class="courses-in-progress__title">cursos em andamento</h3>
                 </header>
-                <section class="github-repos__cards">
-                    <article class="github-repo__card">
-                        <header class="github-repo__header">
-                            <h4>know-more-about-countries-app</h4>
-                        </header>
-                        <div class="github-repo__content">
-                            <div class="github-repo__description">
-                                <p>Web App to know more about countries</p>
+                <div class="courses-in-progress__container card__container card__paper">
+                    <div class="course-in-progress__all-items">
+                        <article class="course-in-progress__item">
+                            <header class="course-in-progress__item-header">
+                                <a href="/" title="Informações sobre o curso" target="blank" rel="noopener">
+                                    <h4 class="courses-in-progress__item-title">
+                                        React: gerenciamento de estados globais com ContextAPI
+                                    </h4>
+                                </a>
+                            </header>
+                            <div class="progress-bar__container">
+                                <progress class="progress-bar" value="55" max="100"></progress>
+                                <span class="progress-bar__number">55%</span>
                             </div>
-                            <div class="github-repo__info">
-                                <span class="github-repo__data">
-                                    09/03/2022
-                                </span>
-                                <span class="github-repo__language-name">
-                                    <i class="github-repo__color bg-color-javascript"></i>
-                                    JavaScript
-                                </span>
+                        </article>
+                        <article class="course-in-progress__item">
+                            <header class="course-in-progress__item-header">
+                                <a href="/" title="Informações sobre o curso" target="blank" rel="noopener">
+                                    <h4 class="courses-in-progress__item-title">
+                                        Introdução ao Canva: Criando o material gráfico para um podcast
+                                    </h4>
+                                </a>
+                            </header>
+                            <div class="progress-bar__container">
+                                <progress class="progress-bar" value="37" max="100"></progress>
+                                <span class="progress-bar__number">37%</span>
                             </div>
-                        </div>
-                    </article>
-                </section>
-            </div>
-        </section>
+                        </article>
+                    </div>
+                </div>
+            </section>
+        </div>
     </main>
-
+    <footer class="footer">
+        <p>
+            © 2022 - <a class="link" href="mailto:vanribeiro.dev@gmail.com">vanessa ribeiro</a>
+        </p>
+    </footer>
+    <script type="module" src="./../js/pages/commits.js"></script>
 </body>
 </html>

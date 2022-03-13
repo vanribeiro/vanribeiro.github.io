@@ -5,9 +5,8 @@
 Quebrei a entrega deste portfolio em fases:
 - Fase 00: Desenhar novas telas
 - Fase 01: Home
-- Fase 02: Últimos Commits
-- Fase 03: Habilidades Técnicas
-- Fase 04: Contatos
+- Fase 02: Commits
+- Fase 03: Contatos
 
 ### Fase 00 - Desenhar novas telas:
 
@@ -15,26 +14,23 @@ Quebrei a entrega deste portfolio em fases:
 
 - Desenhei novas telas.
 - [Link do Layout](https://www.figma.com/file/1Y7L3A6rmKyWwLMCxHQGTU/Meu-Site-Portfolio---2022?node-id=12%3A235)
-- Ainda falta desenhar a tela de Últimos Commits
+- Ainda falta desenhar a tela de Contatos
 
 ### Fase 01 - Home:
 
-*status*: Parcialmente finalizada
+*status*: Finalizada
 
 - Comecei a codificar pela home, pois é o que vou publicar primeiro.
 
-### Fase 02 - Últimos Commits:
+### Fase 02 - Commits:
+
+*status*: iniciada
+
+### Fase 03 - Contatos:
 
 *status*: Não iniciada
 
-### Fase 03 - Habilidades Técnicas:
-
-*status*: Não iniciada
-
-### Fase 02 - Contatos:
-
-*status*: Não iniciada
-
+Falta: desenhar tela 
 
 <!-- <hr style="width: 100%; height: 1px; background-color: #5e5e5ebf; border: 0"> -->
 
@@ -54,6 +50,7 @@ Quebrei a entrega deste portfolio em fases:
 - VS Code
 
 ## Libs, Plugins e Frameworks
+
 - [Language colors](https://github.com/quickutils/language-colors);
 - [GlideJS](https://glidejs.com/)
 
