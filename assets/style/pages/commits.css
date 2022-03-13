@@ -1,26 +1,28 @@
 @import url('./../components/header-pages.css');
+@import url('./../components/gitgub-repos/github-repos.css');
 @import url('./../components/gitgub-repos/card.css');
 @import url('./../components/gitgub-repos/footer-section.css');
 @import url('./../components/courses/card.css');
 @import url('./../components/courses/courses-in-progress.css');
 @import url('./../components/progress-bar.css');
 
-.github-repos__title{
-    font-weight: 400;
-}
-
-.github-repos__title i{
-    padding-right: 4px;
-}
 
 .card__container{
     width: 92%;
     margin: auto;
-    padding: 5% 4%;
 }
 
 .card__paper{
     background-color: var(--card-background-color);
     box-shadow: 0px 4px 8px var(--card-box-shadow-color);
     border-radius: 4px;
+}
+
+
+@media screen and (min-width: 1200px){
+    .main__container{
+        display: grid;
+        grid-template-columns: repeat(2, 48%);
+        column-gap: 4%;
+    }
 }

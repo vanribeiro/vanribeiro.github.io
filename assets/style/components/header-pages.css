@@ -50,10 +50,12 @@
     .header-page__menu{
         width: 50%;
         height: 75px;
+        display: flex;
+        justify-content: flex-end;
     }
 
     .header-page__list{
-        width: 100%;
+        width: 34%;
         display: flex;
         justify-content: space-between;
     }
