@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400&family=Style+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400&family=Style+Script&display=swap">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./../assets/style/commons/reset.css">
     <link rel="stylesheet" href="./../assets/style/libs/language-colors.css">
-    <!-- <link rel="stylesheet" href="/node_modules/@glidejs/glide/dist/css/glide.core.min.css"> -->
     <link rel="stylesheet" href="./../assets/style/app.css">
     <link rel="stylesheet" href="./../assets/style/pages/commits.css">
     <title>Vanessa Ribeiro - Commits</title>
@@ -30,21 +30,21 @@
                         <a class="header-page__link" href="/">Home</a>
                     </li>
                     <li class="header-page__list-item">
-                        <a class="header-page__link" href="/pages/commits.html">Commits</a>
+                        <a class="header-page__link" href="/paginas/commits.html">Commits</a>
                     </li>
                     <li class="header-page__list-item">
-                        <a class="header-page__link" href="/pages/contato.html">Contato</a>
+                        <a class="header-page__link" href="/paginas/contato.html">Contato</a>
                     </li>
                 </ul>
             </nav>
         </div>
     </header>
     <main>
-        <div class="container">
+        <div class="container main__container">
             <section class="github-repos">
                 <div class="github-repos__container">
                     <header class="github-repos__header">
-                        <h3 class="github-repos__title">
+                        <h3 class="github-repos__title card-title">
                             <i class="github-repos__logo-icon icons"></i>
                             github
                         </h3>
@@ -57,42 +57,137 @@
             </section>
             <section class="courses-in-progress">
                 <header class="courses-in-progress__header">
-                    <h3 class="courses-in-progress__title">cursos em andamento</h3>
+                    <h3 class="courses-in-progress__title card-title">
+                        cursos em andamento
+                    </h3>
                 </header>
                 <div class="courses-in-progress__container card__container card__paper">
-                    <div class="course-in-progress__all-items">
-                        <article class="course-in-progress__item">
-                            <header class="course-in-progress__item-header">
-                                <a href="/" title="Informações sobre o curso" target="blank" rel="noopener">
-                                    <h4 class="courses-in-progress__item-title">
-                                        React: gerenciamento de estados globais com ContextAPI
-                                    </h4>
+                    <div class="course-in-progress__all-items"></div>
+                </div>
+            </section>
+            <section class="instagram-posts">
+                <header class="instagram-posts__header">
+                    <h3 class="instagram-posts__title card-title">
+                        <i class="instagram-posts__logo-icon icons"></i>
+                        instagram
+                    </h3>
+                </header>
+                <div class="instagram-posts__container">
+                    <div class="instagram-posts__all-items">
+                        <ul class="instagram-posts__list">
+                            <li class="instagram-posts__list-item swiper-slide">
+                                <a href="/" target="blank" rel="noopener">
+                                    <figure class="instagram-posts__image-container">
+                                        <img class="img-responsive instagram-posts__image" src="./../assets/img/insta-post.png" alt="Post">
+                                    </figure>
                                 </a>
-                            </header>
-                            <div class="progress-bar__container">
-                                <progress class="progress-bar" value="55" max="100"></progress>
-                                <span class="progress-bar__number">55%</span>
-                            </div>
-                        </article>
-                        <article class="course-in-progress__item">
-                            <header class="course-in-progress__item-header">
-                                <a href="/" title="Informações sobre o curso" target="blank" rel="noopener">
-                                    <h4 class="courses-in-progress__item-title">
-                                        Introdução ao Canva: Criando o material gráfico para um podcast
-                                    </h4>
+                            </li>
+                            <li class="instagram-posts__list-item swiper-slide">
+                                <a href="/" target="blank" rel="noopener">
+                                    <figure class="instagram-posts__image-container">
+                                        <img class="img-responsive instagram-posts__image" src="./../assets/img/insta-post.png" alt="Post">
+                                    </figure>
                                 </a>
-                            </header>
-                            <div class="progress-bar__container">
-                                <progress class="progress-bar" value="37" max="100"></progress>
-                                <span class="progress-bar__number">37%</span>
-                            </div>
-                        </article>
+                            </li>
+                            <li class="instagram-posts__list-item swiper-slide">
+                                <a href="/" target="blank" rel="noopener">
+                                    <figure class="instagram-posts__image-container">
+                                        <img class="img-responsive instagram-posts__image" src="./../assets/img/insta-post.png" alt="Post">
+                                    </figure>
+                                </a>
+                            </li>
+                            <li class="instagram-posts__list-item swiper-slide">
+                                <a href="/" target="blank" rel="noopener">
+                                    <figure class="instagram-posts__image-container">
+                                        <img class="img-responsive instagram-posts__image" src="./../assets/img/insta-post.png" alt="Post">
+                                    </figure>
+                                </a>
+                            </li>
+                            <li class="instagram-posts__list-item swiper-slide">
+                                <a href="/" target="blank" rel="noopener">
+                                    <figure class="instagram-posts__image-container">
+                                        <img class="img-responsive instagram-posts__image" src="./../assets/img/insta-post.png" alt="Post">
+                                    </figure>
+                                </a>
+                            </li>
+                            <li class="instagram-posts__list-item swiper-slide">
+                                <a href="/" target="blank" rel="noopener">
+                                    <figure class="instagram-posts__image-container">
+                                        <img class="img-responsive instagram-posts__image" src="./../assets/img/insta-post.png" alt="Post">
+                                    </figure>
+                                </a>
+                            </li>
+                            <li class="instagram-posts__list-item swiper-slide">
+                                <a href="/" target="blank" rel="noopener">
+                                    <figure class="instagram-posts__image-container">
+                                        <img class="img-responsive instagram-posts__image" src="./../assets/img/insta-post.png" alt="Post">
+                                    </figure>
+                                </a>
+                            </li>
+                            <li class="instagram-posts__list-item swiper-slide">
+                                <a href="/" target="blank" rel="noopener">
+                                    <figure class="instagram-posts__image-container">
+                                        <img class="img-responsive instagram-posts__image" src="./../assets/img/insta-post.png" alt="Post">
+                                    </figure>
+                                </a>
+                            </li>
+                            <li class="instagram-posts__list-item swiper-slide">
+                                <a href="/" target="blank" rel="noopener">
+                                    <figure class="instagram-posts__image-container">
+                                        <img class="img-responsive instagram-posts__image" src="./../assets/img/insta-post.png" alt="Post">
+                                    </figure>
+                                </a>
+                            </li>
+                            <li class="instagram-posts__list-item swiper-slide">
+                                <a href="/" target="blank" rel="noopener">
+                                    <figure class="instagram-posts__image-container">
+                                        <img class="img-responsive instagram-posts__image" src="./../assets/img/insta-post.png" alt="Post">
+                                    </figure>
+                                </a>
+                            </li>
+                            <li class="instagram-posts__list-item swiper-slide">
+                                <a href="/" target="blank" rel="noopener">
+                                    <figure class="instagram-posts__image-container">
+                                        <img class="img-responsive instagram-posts__image" src="./../assets/img/insta-post.png" alt="Post">
+                                    </figure>
+                                </a>
+                            </li>
+                            <li class="instagram-posts__list-item swiper-slide">
+                                <a href="/" target="blank" rel="noopener">
+                                    <figure class="instagram-posts__image-container">
+                                        <img class="img-responsive instagram-posts__image" src="./../assets/img/insta-post.png" alt="Post">
+                                    </figure>
+                                </a>
+                            </li>
+                            <li class="instagram-posts__list-item swiper-slide">
+                                <a href="/" target="blank" rel="noopener">
+                                    <figure class="instagram-posts__image-container">
+                                        <img class="img-responsive instagram-posts__image" src="./../assets/img/insta-post.png" alt="Post">
+                                    </figure>
+                                </a>
+                            </li>
+                            <li class="instagram-posts__list-item swiper-slide">
+                                <a href="/" target="blank" rel="noopener">
+                                    <figure class="instagram-posts__image-container">
+                                        <img class="img-responsive instagram-posts__image" src="./../assets/img/insta-post.png" alt="Post">
+                                    </figure>
+                                </a>
+                            </li>
+                            <li class="instagram-posts__list-item swiper-slide">
+                                <a href="/" target="blank" rel="noopener">
+                                    <figure class="instagram-posts__image-container">
+                                        <img class="img-responsive instagram-posts__image" src="./../assets/img/insta-post.png" alt="Post">
+                                    </figure>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="swiper-pagination"></div>
                     </div>
                 </div>
             </section>
         </div>
     </main>
-    <footer class="footer">
+    <footer class="footer footer--pages">
         <p>
             © 2022 - <a class="link" href="mailto:vanribeiro.dev@gmail.com">vanessa ribeiro</a>
         </p>

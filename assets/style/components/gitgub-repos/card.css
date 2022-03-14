@@ -1,10 +1,8 @@
-.github-repos__cards{
-    margin-top: 16px;
-}
-
 .github-repo__card{
     height: 110px;
+    width: 100%;
     margin: 16px auto;
+    display: flex;
 }
 
 .github-repo__header{
@@ -16,8 +14,6 @@
 }
 
 .github-repo__title{
-    font-weight: 700;
-    font-size: 1em;
     padding-bottom: 4px;
 }
 
@@ -48,5 +44,17 @@
 @media screen and (max-width: 743px){
     .github-repo__card:last-child{
         display: none;
+    }
+}
+
+@media screen and (min-width: 744px){
+    .github-repo__card:last-child{
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .github-repo__card:last-child{
+        display: flex;
     }
 }

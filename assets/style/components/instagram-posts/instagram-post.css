@@ -1,0 +1,20 @@
+@import url('./images.css');
+@import url('./images-grid.css');
+
+.instagram-posts__image-container{
+    width: 90%;
+}
+
+.instagram-posts__header{
+    margin: 16px auto;
+}
+
+.instagram-posts{
+    grid-column: 1 / 3;
+}
+
+@media screen and (min-width: 744px) {
+    .instagram-posts__image-container{
+        width: 100%;
+    }
+}

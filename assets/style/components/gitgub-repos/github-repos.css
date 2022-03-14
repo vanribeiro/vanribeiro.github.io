@@ -1,0 +1,40 @@
+.github-repos__cards{
+    margin-top: 16px;
+}
+
+.github-repos__title{
+    font-weight: 400;
+}
+
+.github-repos__title i{
+    padding-right: 4px;
+}
+
+@media screen and (min-width: 744px){
+    .github-repos__cards{
+        display: grid;
+        grid-template-columns: repeat(2, 47.5%);
+        column-gap: 5%;
+    }
+}
+
+@media screen and (min-width: 1200px){
+
+    
+    .github-repos{
+        margin-top: 24px;
+    }
+    
+    .github-repos__cards{
+        margin-top: 8px;
+    }
+    
+    .github-repos__cards{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 47.5%);
+        column-gap: 5%;
+
+    }
+
+}

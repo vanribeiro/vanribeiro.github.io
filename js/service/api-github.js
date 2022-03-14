@@ -1,4 +1,4 @@
-import { gitCardRepoTemplate } from "../templates/index.js";
+import { githubCardRepoTemplate } from "../templates/index.js";
 
 const getGithubRepoData = async (container) => {
 
@@ -15,7 +15,7 @@ const getGithubRepoData = async (container) => {
                 article.classList.add('github-repo__card');
                 article.classList.add('card__paper');
                 article.innerHTML = 
-                    gitCardRepoTemplate(
+                    githubCardRepoTemplate(
                         item.name, 
                         item.description, 
                         item.updated_at, 

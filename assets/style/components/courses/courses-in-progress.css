@@ -1,3 +1,11 @@
+.courses-in-progress{
+    margin: 24px auto;
+}
+
+.courses-in-progress__container {
+    padding: 4%;
+}
+
 .courses-in-progress__header{
     margin: 16px auto;
 }
@@ -7,6 +15,15 @@
 }
 
 
-.courses-in-progress{
-    margin: 24px auto;
+@media screen and (min-width: 1200px){
+    
+    .courses-in-progress{
+        margin: 24px 0;
+    }
+
+    .courses-in-progress__header{
+        margin-bottom: 20px;
+        margin-top: 4px;
+    }
+
 }
