@@ -1,0 +1,10 @@
+.instagram-posts__image{
+    width: 100%;
+    border: 10px solid #f8f8f8;
+}
+
+@media screen and (min-width: 744px) {
+    .instagram-posts__image{
+        border-width: 4px;
+    }
+}

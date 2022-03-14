@@ -22,6 +22,15 @@ i.github-repos__book-icon{
 
 i.github-repos__logo-icon{
     background-image: url('./../../img/icons/pages/github.svg');
+}
+
+
+i.instagram-posts__logo-icon{
+    background-image: url('./../../img/icons/pages/instagram.svg');
+}
+
+i.instagram-posts__logo-icon,
+i.github-repos__logo-icon{
     width: 18px;
     height: 18px;
 }

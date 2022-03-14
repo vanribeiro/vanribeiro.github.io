@@ -11,7 +11,6 @@ const getAluraDashboardData = async (container) => {
                 article.classList.add('course-in-progress__item');
                 article.innerHTML = aluraStudyngTemplate(item.name, item.progress, item.slug);
                 container.append(article);
-                
             })
         });
 }

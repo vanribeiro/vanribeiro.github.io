@@ -1,5 +1,6 @@
 import getGithubRepoData from "../service/api-github.js";
 import getAluraDashboardData from "../service/api-alura.js";
+import { handlerSwiperCSSclasses } from "../handlers/index.js";
 
 const githubCardsContainer = document.querySelector('.github-repos__cards');
 const aluraCardContainer = document.querySelector('.course-in-progress__all-items');
@@ -13,8 +14,9 @@ setTimeout(() => {
     allProgressBar.forEach(progressBar => {
         const pertcentual = progressBar.dataset.barValue;
         progressBar.style.width = `${pertcentual}%`;
-        console.log(progressBar.dataset.barValue)
-    })
+    });
 
 }, 500);
 
+window.addEventListener('load', handlerSwiperCSSclasses);
+window.addEventListener('resize', handlerSwiperCSSclasses);
