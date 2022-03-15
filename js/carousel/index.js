@@ -1,10 +1,10 @@
-import Swiper from 'https://unpkg.com/swiper@8/swiper-bundle.esm.browser.min.js';
+import Swiper from '../libs/swiper.min.js';
 
 const newCarousel = (container, carouselState) =>{
 
     const swiper = new Swiper(container, {
         slidesPerView: 3,
-        freeMode: true,
+        freeMode: false,
         pagination: {
           el: ".swiper-pagination",
           clickable: true,

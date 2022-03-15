@@ -1,6 +1,6 @@
 import { githubCardRepoTemplate } from "../templates/index.js";
 
-const getGithubRepoData = async (container) => {
+const fetchGithubReposData = async (container) => {
 
     await fetch('https://api.github.com/users/vanribeiro/repos')
         .then(response => response.json())
@@ -30,4 +30,4 @@ const getGithubRepoData = async (container) => {
         
 }
 
-export default getGithubRepoData;
+export default fetchGithubReposData;

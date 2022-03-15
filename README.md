@@ -20,19 +20,15 @@ Quebrei a entrega deste portfolio em fases:
 
 *status*: Finalizada
 
-- Comecei a codificar pela home, pois é o que vou publicar primeiro.
-
 ### Fase 02 - Commits:
 
-*status*: iniciada
+*status*: Finalizada
 
 ### Fase 03 - Contatos:
 
 *status*: Não iniciada
 
 Falta: desenhar tela 
-
-<!-- <hr style="width: 100%; height: 1px; background-color: #5e5e5ebf; border: 0"> -->
 
 ## Tecnologias
 
@@ -52,8 +48,13 @@ Falta: desenhar tela
 ## Libs, Plugins e Frameworks
 
 - [Language colors](https://github.com/quickutils/language-colors);
-- [GlideJS](https://glidejs.com/)
+- [Swiper](https://swiperjs.com/)
+- [LazySizes](https://github.com/aFarkas/lazysizes)
 
 ## Ideias:
 - Adicionar formulário de contato, usando uma api para formulário. 
     - [Formspark](https://formspark.io/);
+
+## Posts
+- [Lazy loading de imagens em navegadores](https://web.dev/browser-level-image-lazy-loading/)
+-[Lazy Loading Images – The Complete Guide](https://imagekit.io/blog/lazy-loading-images-complete-guide/)

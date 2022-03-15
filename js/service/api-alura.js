@@ -1,6 +1,6 @@
 import { aluraStudyngTemplate } from "../templates/index.js";
 
-const getAluraDashboardData = async (container) => {
+const fetchAluraDashboardData = async (container) => {
     const URLbase = 'https://vanribeiro-github-io-backend.vercel.app';
 
     await fetch(`${URLbase}/api/estudando-na-alura`)
@@ -15,4 +15,4 @@ const getAluraDashboardData = async (container) => {
         });
 }
 
-export default getAluraDashboardData;
+export default fetchAluraDashboardData;

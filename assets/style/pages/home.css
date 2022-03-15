@@ -1,2 +1,51 @@
 @import url('./../components/profile/component.css');
 @import url('./../components/button.css');
+
+body{
+    overflow-y: hidden;
+}
+
+.home__profile{
+    height: calc(100vh - 175px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-page--home .header-page__container{
+    border: 0;
+}
+
+@media screen and (max-width: 743px) {
+
+    .header-page--home .header-page__menu{
+        width: 100%;
+        justify-content: center;
+    }
+
+    .header-page--home .header-page__container{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .header-page--home .header-page__list{
+        align-items: center;
+
+    }
+
+}
+
+@media screen and (min-width: 744px) {
+
+    .header-page--home .header-page__menu{
+        width: 100%;
+        justify-content: center;
+    }
+
+    .header-page--home .header-page__list{
+        width: 16%;
+        justify-content: space-around;
+    }
+
+}

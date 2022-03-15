@@ -19,5 +19,5 @@ const handlerSwiperCSSclasses = () => {
 }
 
 export {
-    handlerSwiperCSSclasses
+    handlerSwiperCSSclasses,
 }

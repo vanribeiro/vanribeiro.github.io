@@ -7,6 +7,7 @@
 @import url('./../components/progress-bar.css');
 @import url('./../components/instagram-posts/instagram-post.css');
 @import url('./../components/carousel/style.css');
+@import url('./../components/menu-mobile.css');
 
 .card__container{
     width: 92%;

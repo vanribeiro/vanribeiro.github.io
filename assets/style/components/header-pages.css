@@ -35,40 +35,48 @@
     margin-bottom: 4px;
 }
 
-@media screen and (max-width: 1199px){
+@media screen and (max-width: 743px){
     .header-page__menu{
         display: none;
     }
 }
 
-@media screen and (min-width: 1200px){
-
+@media screen and (min-width: 744px){
     .header-page__menu-icon__container{
         display: none;
     }
-
+    
     .header-page__menu{
         width: 50%;
-        height: 75px;
+        height: 70px;
         display: flex;
         justify-content: flex-end;
+        align-items: center;
     }
-
+    
     .header-page__list{
-        width: 34%;
+        width: 40%;
         display: flex;
         justify-content: space-between;
     }
-
+    
     .header-page__link{
         font-size: 1em;
         line-height: 1.2;
         color: var(--font-text);
         font-weight: 400;
     }
-
+    
     .header-page__link:hover{
         color: var(--hover-text-color);
+    }
+
+}
+
+@media screen and (min-width: 1200px){
+
+    .header-page__list{
+        width: 24%;
     }
 }
 

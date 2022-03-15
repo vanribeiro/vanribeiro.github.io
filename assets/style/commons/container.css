@@ -1,28 +1,30 @@
-.container{
+.this-container{
     margin: auto;
+    background-color: var(--background-color) !important;
+    padding: 0;
 }
 
 @media screen and (max-width: 1199px){
-    .container{
+    .this-container{
         width: 90%;
     }
 }
 
 @media screen and (min-width: 1200px){
-    .container{
+    .this-container{
         max-width: 1170px;
         width: 100%;
     }
 }
 
 @media screen and (min-width: 1300px){
-    .container{
+    .this-container{
         max-width: 1280px;
         width: 100%;
     }
 }
 @media screen and (min-width: 1440px){
-    .container{
+    .this-container{
         max-width: 1400px;
         width: 100%;
     }

@@ -1,4 +1,8 @@
 .footer{
+    height: 30px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
     text-align: center;
 }
 
@@ -9,3 +13,4 @@
 .footer--pages{
     margin: 24px auto;
 }
+

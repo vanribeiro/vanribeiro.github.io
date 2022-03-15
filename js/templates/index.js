@@ -10,7 +10,7 @@ const githubCardRepoTemplate = (repoName, repoDescription, repoLastUpdate, repoP
         <div class="github-repo__card__container card__container">
             <header class="github-repo__header">
                 <a class="github-repo__link" href=${repoURL} target="blank" rel="noopener">
-                    <h4 class="github-repo__title">
+                    <h4 class="github-repo__title subtitle-cards">
                         <i class="github-repos__book-icon icons"></i>
                         ${repoName}
                     </h4>
@@ -40,7 +40,7 @@ const aluraStudyngTemplate = (courseName, courseProgress, courseSlug) =>{
     return `
         <header class="course-in-progress__item-header">
             <a href="https://cursos.alura.com.br/course/${courseSlug}" title="Informações sobre o curso" target="blank" rel="noopener">
-                <h4 class="courses-in-progress__item-title">
+                <h4 class="courses-in-progress__item-title subtitle-cards">
                     ${courseName}
                 </h4>
             </a>
@@ -55,7 +55,71 @@ const aluraStudyngTemplate = (courseName, courseProgress, courseSlug) =>{
 
 }
 
+const instagramItemTemplate = (caption, media_type, permalink, thumbnail_url, media_url) =>{
+    return `
+        <a href="${permalink}" target="blank" rel="noopener">
+            <figure class="instagram-posts__image-container">
+                <img 
+                    style="height:1080; width:1080px;"
+                    loading="lazy"
+                    class="img-responsive instagram-posts__image lazyload" 
+                    src="./../assets/img/placeholders/placeholder-image.svg" 
+                    data-src="${media_type === 'VIDEO' ? thumbnail_url : media_url}" 
+                    alt="${caption}"
+                >
+            </figure>
+        </a>
+    `;
+}
+
+const topMenuList = () => {
+    return `
+        <ul class="header-page__list">
+            <li class="header-page__list-item">
+                <a class="header-page__link" href="/">Home</a>
+            </li>
+            <li class="header-page__list-item">
+                <a class="header-page__link" href="/paginas/commits.html">Commits</a>
+            </li>
+        </ul>
+    `;
+}
+
+const menuMobile = () => {
+    return `
+        <div class="menu-mobile__close-button-container this-container">
+            <span class="menu-mobile__close-button">
+                &times;
+            </span>
+        </div>
+        <div class="menu-mobile__container this-container">
+            <ul class="menu-mobile__list">
+                <li class="menu-mobile__list-item">
+                    <a class="menu-mobile__link" href="/">Home</a>
+                </li>
+                <li class="menu-mobile__list-item">
+                    <a class="menu-mobile__link" href="/paginas/commits.html">Commits</a>
+                </li>
+            </ul>
+            <ul class="menu-mobile__icons-list">
+                <a class="menu-mobile__icon-link" href="https://www.linkedin.com/in/vanribeiro" >
+                    <i class="icons linkedin"></i>
+                </a>
+                <a class="menu-mobile__icon-link" href="https://www.instagram.com/vanribeiro.dev" >
+                    <i class="icons instagram"></i>                
+                </a>
+                <a class="menu-mobile__icon-link" href="https://github.com/vanribeiro" >
+                    <i class="icons github"></i>
+                </a>
+            </ul>
+        </div>
+    `;
+}
+
 export{
     githubCardRepoTemplate,
-    aluraStudyngTemplate
+    aluraStudyngTemplate,
+    instagramItemTemplate,
+    menuMobile,
+    topMenuList
 }

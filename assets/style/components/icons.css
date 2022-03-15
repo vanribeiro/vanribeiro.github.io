@@ -24,7 +24,6 @@ i.github-repos__logo-icon{
     background-image: url('./../../img/icons/pages/github.svg');
 }
 
-
 i.instagram-posts__logo-icon{
     background-image: url('./../../img/icons/pages/instagram.svg');
 }
@@ -40,4 +39,25 @@ i.github-repo__color{
     height: 12px;
     border-radius: 50%;
     margin-right: 4px;
+}
+
+i.instagram,
+i.github,
+i.linkedin{
+    width: 26px;
+    height: 26px;
+    opacity: 0.7;
+}
+
+i.instagram{
+    background-image: url('./../../img/icons/social-media/instagram.png');
+}
+
+i.github{
+    background-image: url('./../../img/icons/social-media/github.png');
+    
+}
+
+i.linkedin{
+    background-image: url('./../../img/icons/social-media/linkedin.png');
 }

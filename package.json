@@ -21,7 +21,5 @@
     "url": "https://github.com/vanribeiro/vanribeiro.github.io/issues"
   },
   "homepage": "https://github.com/vanribeiro/vanribeiro.github.io#readme",
-  "dependencies": {
-    "swiper": "^8.0.7"
-  }
+  "dependencies": {}
 }
