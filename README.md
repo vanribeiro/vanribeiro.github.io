@@ -57,4 +57,4 @@ Falta: desenhar tela
 
 ## Posts
 - [Lazy loading de imagens em navegadores](https://web.dev/browser-level-image-lazy-loading/)
--[Lazy Loading Images – The Complete Guide](https://imagekit.io/blog/lazy-loading-images-complete-guide/)
+- [Lazy Loading Images – The Complete Guide](https://imagekit.io/blog/lazy-loading-images-complete-guide/)
