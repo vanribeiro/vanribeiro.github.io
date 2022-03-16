@@ -35,6 +35,7 @@ Falta: desenhar tela
 ### Linguagens
 - HTML5
 - CSS3
+- JavaScript
 
 ### Conceitos
 - Design Responsivo
@@ -51,10 +52,18 @@ Falta: desenhar tela
 - [Swiper](https://swiperjs.com/)
 - [LazySizes](https://github.com/aFarkas/lazysizes)
 
+## Back-end Dessa aplicação
+
+- [Repositório](https://github.com/vanribeiro/vanribeiro-github-io-backend)
+
 ## Ideias:
-- Adicionar formulário de contato, usando uma api para formulário. 
-    - [Formspark](https://formspark.io/);
+    - Adicionar formulário de contato, usando uma api para formulário. 
+        - [Formspark](https://formspark.io/);
+        - Criar uma API para receber estes dados
 
 ## Posts
+
+Alguns dos posts que me ajudaram na criação deste repositórios:
+
 - [Lazy loading de imagens em navegadores](https://web.dev/browser-level-image-lazy-loading/)
 - [Lazy Loading Images – The Complete Guide](https://imagekit.io/blog/lazy-loading-images-complete-guide/)
