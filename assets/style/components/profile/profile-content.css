@@ -67,7 +67,7 @@
     }
 
     .profile__content__text p{
-        font-size: 66%;
+        font-size: 100%;
         line-height: 1.3;
     }
 }
@@ -83,7 +83,7 @@
     }
     
     .profile__content__text p{
-        font-size: 150%;
+        font-size: 140%;
         line-height: 1.3;
     }
     
