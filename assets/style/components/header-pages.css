@@ -36,6 +36,10 @@
 }
 
 @media screen and (max-width: 743px){
+    .header-page{
+        margin-bottom: 0;
+    }
+
     .header-page__menu{
         display: none;
     }

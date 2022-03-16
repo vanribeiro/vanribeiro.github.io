@@ -11,17 +11,19 @@ fetchGithubReposData(githubCardsContainer);
 fetchAluraDashboardData(aluraCardContainer);
 fetchInstagramMediaData(instagramListContainer);
 
-setTimeout(() => {
 
-    const allProgressBar = document.querySelectorAll('.progress-bar');
-    if(allProgressBar){
-        allProgressBar.forEach(progressBar => {
-            const pertcentual = progressBar.dataset.barValue;
-            progressBar.style.width = `${pertcentual}%`;
-        });
-    }
-
-}, 500);
-
-window.addEventListener('load', handlerSwiperCSSclasses);
+window.addEventListener('load', () => {
+    handlerSwiperCSSclasses();
+    setTimeout(() => {
+    
+        const allProgressBar = document.querySelectorAll('.progress-bar');
+        if(allProgressBar){
+            allProgressBar.forEach(progressBar => {
+                const pertcentual = progressBar.dataset.barValue;
+                progressBar.style.width = `${pertcentual}%`;
+            });
+        }
+    
+    }, 500);
+});
 window.addEventListener('resize', handlerSwiperCSSclasses);

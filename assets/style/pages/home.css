@@ -18,6 +18,10 @@ body{
 
 @media screen and (max-width: 743px) {
 
+    .home__profile{
+        height: calc(100vh - 160px);
+    }
+
     .header-page--home .header-page__menu{
         width: 100%;
         justify-content: center;

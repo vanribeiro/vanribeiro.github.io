@@ -38,7 +38,7 @@
     }
 
     .profile__content__text p{
-        font-size: 66%;
+        font-size: 100%;
         line-height: 1.3;
     }
 }
@@ -52,6 +52,10 @@
 
     .profile__content{
         width: calc(100% - 230px);
+    }
+
+    .profile__content__header{
+        margin-bottom: 4px;
     }
 
     .profile__content__subtitle{
@@ -79,7 +83,7 @@
     }
     
     .profile__content__text p{
-        font-size: 100%;
+        font-size: 150%;
         line-height: 1.3;
     }
     
