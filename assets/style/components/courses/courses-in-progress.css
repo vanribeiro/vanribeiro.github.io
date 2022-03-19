@@ -16,6 +16,17 @@
 
 
 @media screen and (min-width: 1200px){
+
+    .courses-in-progress__container{
+        max-height: 200px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .course-in-progress__all-items{
+        width: 100%;
+    }
     
     .courses-in-progress{
         margin: 24px 0;
