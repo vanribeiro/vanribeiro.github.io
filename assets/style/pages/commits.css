@@ -1,13 +1,14 @@
+@import url('./../components/menu-mobile.css');
+@import url('./../components/progress-bar.css');
+@import url('./../commons/status-messages.css');
 @import url('./../components/header-pages.css');
-@import url('./../components/gitgub-repos/github-repos.css');
 @import url('./../components/gitgub-repos/card.css');
+@import url('./../components/gitgub-repos/github-repos.css');
 @import url('./../components/gitgub-repos/footer-section.css');
 @import url('./../components/courses/card.css');
 @import url('./../components/courses/courses-in-progress.css');
-@import url('./../components/progress-bar.css');
 @import url('./../components/instagram-posts/instagram-post.css');
 @import url('./../components/carousel/style.css');
-@import url('./../components/menu-mobile.css');
 
 .card__container{
     width: 92%;
