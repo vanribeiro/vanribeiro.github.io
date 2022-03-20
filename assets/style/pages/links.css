@@ -1,0 +1,55 @@
+@import url('./../components/profile/profile-image.css');
+
+.links-page__header__image-container{
+    width: 40%;
+}
+
+.links-page__header__image{
+    border: 3px solid var(--image-border);
+}
+
+.links-page__header{
+    margin-top: 24px;
+    padding: 8% 0;
+    height: 190px;
+}
+
+.links-page__header__caption{
+    margin: 20px auto;
+    text-align: center;
+}
+
+.links-page__social-media-container,
+.links-page__header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.links-page__social-media-container{
+    margin-bottom: 20px;
+}
+
+.links-page__social-media-link{
+    margin: 4%;
+}
+
+.links-page__list-item__link{
+    color: var(--text-color);
+    font-size: 1em;
+}
+
+.links-page__list{
+    text-align: center;
+}
+
+
+.links-page__list-item{
+    line-height: 1.5;
+}
+
+@media screen and (min-width: 744px){
+    .links-page__header__image-container {
+        width: 20%;
+      }
+}

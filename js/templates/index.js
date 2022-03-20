@@ -9,7 +9,7 @@ const githubCardRepoTemplate = (repoName, repoDescription, repoLastUpdate, repoP
     return `
         <div class="github-repo__card__container card__container">
             <header class="github-repo__header">
-                <a class="github-repo__link" href=${repoURL} target="blank" rel="noopener">
+                <a class="github-repo__link" href=${repoURL} rel="noreferrer noopener" target="_blank">
                     <h4 class="github-repo__title subtitle-cards">
                         <i class="github-repos__book-icon icons"></i>
                         ${repoName}
@@ -39,7 +39,7 @@ const aluraStudyngTemplate = (courseName, courseProgress, courseSlug) =>{
 
     return `
         <header class="course-in-progress__item-header">
-            <a href="https://cursos.alura.com.br/course/${courseSlug}" title="Informações sobre o curso" target="blank" rel="noopener">
+            <a href="https://cursos.alura.com.br/course/${courseSlug}" title="Informações sobre o curso" rel="noreferrer noopener" target="_blank">
                 <h4 class="courses-in-progress__item-title subtitle-cards">
                     ${courseName}
                 </h4>
@@ -57,7 +57,7 @@ const aluraStudyngTemplate = (courseName, courseProgress, courseSlug) =>{
 
 const instagramItemTemplate = (caption, media_type, permalink, thumbnail_url, media_url) =>{
     return `
-        <a href="${permalink}" target="blank" rel="noopener">
+        <a href="${permalink}" rel="noreferrer noopener" target="_blank">
             <figure class="instagram-posts__image-container">
                 <img 
                     style="height:1080; width:1080px;"
@@ -102,13 +102,13 @@ const menuMobile = () => {
                 </li>
             </ul>
             <ul class="menu-mobile__icons-list">
-                <a class="menu-mobile__icon-link" href="https://www.linkedin.com/in/vanribeiro" >
+                <a class="menu-mobile__icon-link" href="https://www.linkedin.com/in/vanribeiro" rel="noreferrer noopener" target="_blank" >
                     <i class="icons linkedin"></i>
                 </a>
-                <a class="menu-mobile__icon-link" href="https://www.instagram.com/vanribeiro.dev" >
+                <a class="menu-mobile__icon-link" href="https://www.instagram.com/vanribeiro.dev" rel="noreferrer noopener" target="_blank" >
                     <i class="icons instagram"></i>                
                 </a>
-                <a class="menu-mobile__icon-link" href="https://github.com/vanribeiro" >
+                <a class="menu-mobile__icon-link" href="https://github.com/vanribeiro" rel="noreferrer noopener" target="_blank" >
                     <i class="icons github"></i>
                 </a>
             </ul>
