@@ -33,3 +33,7 @@ footer{
     max-width: 100%;
     box-sizing: border-box;
 }
+
+.img-responsive--round{
+    border-radius: 50%;
+}
