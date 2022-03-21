@@ -29,3 +29,7 @@
         width: 100%;
     }
 }
+
+.this-container--link{
+    max-width: 630px;
+}

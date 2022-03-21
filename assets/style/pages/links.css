@@ -1,7 +1,7 @@
 @import url('./../components/profile/profile-image.css');
 
 .links-page__header__image-container{
-    width: 40%;
+    width: 50%;
 }
 
 .links-page__header__image{
@@ -10,7 +10,7 @@
 
 .links-page__header{
     margin-top: 24px;
-    padding: 8% 0;
+    padding: 8% 0 4%;
     height: 190px;
 }
 
@@ -26,9 +26,6 @@
     justify-content: center;
 }
 
-.links-page__social-media-container{
-    margin-bottom: 20px;
-}
 
 .links-page__social-media-link{
     margin: 4%;
@@ -48,8 +45,6 @@
     line-height: 1.5;
 }
 
-@media screen and (min-width: 744px){
-    .links-page__header__image-container {
-        width: 20%;
-      }
+.links-page__list--left{
+    text-align: left;
 }
