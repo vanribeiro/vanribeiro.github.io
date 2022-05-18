@@ -36,6 +36,13 @@
     font-size: 1em;
 }
 
+.links-page__list-item__link--icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+}
+
 .links-page__list{
     text-align: center;
 }
