@@ -45,16 +45,32 @@
     .github-repo__card:last-child{
         display: none;
     }
+
+    .github-repo__description p{
+        line-height: 20px;
+    }
 }
 
 @media screen and (min-width: 744px){
     .github-repo__card:last-child{
         display: flex;
     }
+
+    .github-repo__description p{
+        line-height: 20px;
+    }
 }
 
 @media screen and (min-width: 1200px){
     .github-repo__card:last-child{
         display: flex;
+    }
+
+    .github-repo__description p{
+        width: 35ch;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        line-height: 20px;
     }
 }

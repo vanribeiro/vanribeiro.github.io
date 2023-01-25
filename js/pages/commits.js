@@ -15,15 +15,18 @@ fetchInstagramMediaData(instagramListContainer);
 window.addEventListener('load', () => {
     handlerSwiperCSSclasses();
     setTimeout(() => {
-    
         const allProgressBar = document.querySelectorAll('.progress-bar');
         if(allProgressBar){
             allProgressBar.forEach(progressBar => {
-                const pertcentual = progressBar.dataset.barValue;
-                progressBar.style.width = `${pertcentual}%`;
+                const percentual = progressBar.dataset.barValue;
+                progressBar.style.width = `${percentual}%`;
             });
         }
-    
+    // console.log('oi')
     }, 500);
 });
+
+window.addEventListener('DOMContentLoaded', () => {
+});
+
 window.addEventListener('resize', handlerSwiperCSSclasses);

@@ -1,9 +1,13 @@
 import { instagramItemTemplate } from "../templates/index.js";
 
-const fetchInstagramMediaData = async (container) => {
+const setURL = () => {
+    const localhost = 'http://localhost:3000';
     const URLbase = 'https://vanribeiro-github-io-backend.vercel.app';
+    return window.location.port === "5500" ? localhost : URLbase;
+}
 
-    await fetch(`${URLbase}/api/meu-instagram`)
+const fetchInstagramMediaData = async (container) => {
+    await fetch(`${setURL()}/api/meu-instagram`)
         .then(response => response.json())
         .then(insta => {
             insta["data"].slice(0, 15)
