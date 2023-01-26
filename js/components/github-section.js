@@ -1,7 +1,8 @@
-import { githubCardRepoTemplate } from "../templates/index.js";
-import { URL_BASE_GITHUB } from "./config.js";
+import { githubCardRepoTemplate } from "./../templates/index.js";
+import { fetchGithubReposData } from "./../service/api.js";
+import { githubCardsContainer } from './elements.js';
 
-const populateCards = (item, container) => {
+const populateCards = (item) => {
     const article = document.createElement('article');
     article.classList.add('github-repo__card');
     article.classList.add('card__paper');
@@ -9,12 +10,12 @@ const populateCards = (item, container) => {
         githubCardRepoTemplate(
             item.name, 
             item.description, 
-            item.updated_at, 
+            item.pushed_at, 
             item.language, 
             item.html_url
         );
 
-    container.append(article);
+    githubCardsContainer.append(article);
 }
 
 const sortByLastestRepoUpdates = (a, b) => {
@@ -23,14 +24,10 @@ const sortByLastestRepoUpdates = (a, b) => {
     return 0;
 }
 
-const fetchGithubReposData = async (container) => {
-
-    await fetch(URL_BASE_GITHUB)
-        .then(response => response.json())
+const githubSection = async () => {
+    return await fetchGithubReposData()
         .then(data => data.sort(sortByLastestRepoUpdates)
-        .slice(0, 4)
-        .map(item => populateCards(item, container)));
-        
+        .slice(0, 4).map(item => populateCards(item)));
 }
 
-export default fetchGithubReposData;
+export default githubSection;
