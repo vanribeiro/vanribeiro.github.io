@@ -67,7 +67,7 @@
     }
 
     .github-repo__description p{
-        width: 35ch;
+        width: auto;
         text-overflow: ellipsis;
         overflow: hidden;
         white-space: nowrap;

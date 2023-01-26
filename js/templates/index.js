@@ -47,7 +47,7 @@ const aluraStudyngTemplate = (courseName, courseProgress, courseSlug) =>{
         </header>
         <div class="progress-bar__container">
             <div class="progress-bar__background">
-                <div class="progress-bar" data-bar-value="${courseProgress}"></div>
+                <div class="progress-bar" data-bar-value="${courseProgress}" style="width:0%"></div>
             </div>
             <span class="progress-bar__percentual">${courseProgress}%</span>
         </div>

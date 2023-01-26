@@ -11,22 +11,19 @@ fetchGithubReposData(githubCardsContainer);
 fetchAluraDashboardData(aluraCardContainer);
 fetchInstagramMediaData(instagramListContainer);
 
+const playOnProgressBarAnimation = () => {
+    const allProgressBar = document.querySelectorAll('.progress-bar');
+    if(allProgressBar){
+        allProgressBar.forEach(progressBar => {
+            const percentual = progressBar.dataset.barValue;
+            progressBar.style.width = `${percentual}%`;
+        });
+    }
+}
 
 window.addEventListener('load', () => {
     handlerSwiperCSSclasses();
-    setTimeout(() => {
-        const allProgressBar = document.querySelectorAll('.progress-bar');
-        if(allProgressBar){
-            allProgressBar.forEach(progressBar => {
-                const percentual = progressBar.dataset.barValue;
-                progressBar.style.width = `${percentual}%`;
-            });
-        }
-    // console.log('oi')
-    }, 500);
-});
-
-window.addEventListener('DOMContentLoaded', () => {
+    setTimeout(playOnProgressBarAnimation, 5 * 100);
 });
 
 window.addEventListener('resize', handlerSwiperCSSclasses);
