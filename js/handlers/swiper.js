@@ -17,7 +17,22 @@ const handlerSwiperCSSclasses = () => {
         newCarousel('destroy');
     }
 }
-
+/*
+<section class="instagram-posts">
+<header class="instagram-posts__header">
+    <h3 class="instagram-posts__title card-title">
+        <i class="instagram-posts__logo-icon icons"></i>
+        instagram
+    </h3>
+</header>
+<div class="instagram-posts__container">
+    <div class="instagram-posts__all-items">
+        <ul class="instagram-posts__list"></ul>
+        <div class="swiper-pagination"></div>
+    </div>
+</div>
+</section>
+*/
 export {
     handlerSwiperCSSclasses,
 }

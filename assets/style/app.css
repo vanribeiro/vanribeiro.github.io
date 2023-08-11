@@ -4,6 +4,7 @@
 @import url('./components/icons.css');
 @import url('./components/menu-mobile.css');
 @import url('./components/header-pages.css');
+@import url('./components/live-jobs/style.css');
 
 body{
     background-color: var(--background-color);

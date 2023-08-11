@@ -25,10 +25,13 @@ const aluraSection = async () => {
     const isEmpty = (data) => data.length === 0 || data === undefined || data === null;
 
     return await fetchAluraDashboardData()
-        .then(data => {
+        .then(values => {
+            const [ response, data ] = values;
             isEmpty(data)
             ? setMessageWhenNoCourseIsInProgress()
             : data.map(item => populateCards(item));
+
+            return response;
         });
         
 }

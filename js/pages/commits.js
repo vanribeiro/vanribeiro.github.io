@@ -1,18 +1,15 @@
-import { handlerSwiperCSSclasses } from "../handlers/swiper.js";
 import { playOnProgressBarAnimation } from "../components/progress-bar.js";
 import githubSection from "../components/github-section.js";
-import instagramSection from "../components/instagram-section.js";
 import aluraSection from "../components/alura-section.js";
+import { getRandomUrlSource } from "../components/site-iframe.js";
 
 
 githubSection();
-instagramSection();
-aluraSection();
 
-const handleLoad = () => {
-    handlerSwiperCSSclasses();
+const handleLoad = async () => {
+    await aluraSection();
     setTimeout(playOnProgressBarAnimation, 5 * 100);
+    getRandomUrlSource();
 }
 
 window.addEventListener('load', handleLoad);
-window.addEventListener('resize', handlerSwiperCSSclasses);
