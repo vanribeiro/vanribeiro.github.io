@@ -15,7 +15,6 @@ const fetchInstagramMediaData = async () => {
 const fetchAluraDashboardData = async () => {
     const response = await fetch(`${URL_BASE_API}/api/estudando-na-alura`);
     const data = await response.json();
-    console.log(response)
     return [ response, data ];        
 }
 
