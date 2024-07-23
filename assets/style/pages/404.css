@@ -1,0 +1,109 @@
+@import url('./../commons/variables.css');
+@import url('./../components/button.css');
+
+.not-found{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-page--not-found .header-page__container{
+    display: flex;
+    align-items: center;
+    border: 0;
+}
+
+.not-found__section__content__header{
+    text-align: center;
+}
+
+.not-found__section__content__title{
+    font-family: var(--home-font-title);
+    font-size: 6rem;
+    font-weight: 700;
+    color: var(--title-color);
+}
+
+.not-found__section__content__subtitle{
+    font-family: var(--home-font-subtitle);
+    font-size: 2.3rem;
+    color: var(--subtitle-color);
+    letter-spacing: 0.1rem;
+}
+
+.not-found__section__content__cta{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 24px;
+    text-align: center;
+}
+
+@media screen and (max-width: 540px) {
+    .not-found__section__content__title{
+        font-size: 5rem;
+    }
+    
+    .not-found__section__content__subtitle{
+        font-size: 1.5rem;
+    }
+
+    .header-page--not-found .header-page__container{
+        justify-content: flex-end;
+    }
+
+    .header-page--not-found .header-page__menu{
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 541px) {
+
+    .header-page--not-found .header-page__container{
+        justify-content: flex-end;
+    }
+
+    .header-page--not-found .header-page__list{
+        align-items: center;
+    }
+
+}
+
+
+@media screen and (max-width: 743px) {
+    .not-found{
+        height: calc(100vh - 160px);
+    }
+}
+
+@media screen and (min-width: 744px) {
+
+    .not-found{
+        height: calc(100vh - 160px);
+    }
+
+    
+    .header-page--not-found .header-page__menu{
+        width: 100%;
+        justify-content: center;
+    }
+
+    .header-page--not-found .header-page__list{
+        width: 20%;
+        justify-content: space-around;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+    
+    body{
+        overflow-y: hidden;
+    }
+    
+    .not-found{
+        height: calc(100vh - 175px);
+    }
+
+}
