@@ -1,4 +1,5 @@
-import { fetchInstagramMediaData } from "./../service/api.js";
+import endpoint from "../service/config.js";
+import { fetchData } from "./../service/api.js";
 import { instagramItemTemplate } from "./../templates/index.js";
 import { instagramListContainer } from "./elements.js";
 
@@ -20,7 +21,7 @@ const populateCards = (item) => {
 }
 
 const instagramSection = async () => {
-    return await fetchInstagramMediaData() 
+    return await fetchData(`${endpoint.ALURA}/api/meu-instagram`) 
                 .then(insta => { 
                     insta.data.slice(0, 15)
                     .map(item => populateCards(item))

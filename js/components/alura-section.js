@@ -1,4 +1,5 @@
-import { fetchAluraDashboardData } from "../service/api.js";
+import { fetchData } from "../service/api.js";
+import endpoint from "../service/config.js";
 import { aluraStudyngTemplate } from "./../templates/index.js";
 import { aluraCardContainer } from "./elements.js";
 
@@ -24,9 +25,9 @@ const aluraSection = async () => {
 
     const isEmpty = (data) => data.length === 0 || data === undefined || data === null;
 
-    return await fetchAluraDashboardData()
-        .then(values => {
-            const [ response, result ] = values;
+    return await fetchData(endpoint.ALURA, '?collection=progresso')
+        .then(data => {
+            const { response, result } = data;
 
             isEmpty(result)
             ? setMessageWhenNoCourseIsInProgress()
