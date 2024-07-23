@@ -1,7 +1,8 @@
-import { devToPostsCardTemplate } from "../templates/index.js";
-import { fetchData } from "../service/api.js";
-import { devToCardsContainer } from './elements.js';
-import endpoint from "../service/config.js";
+import devToPostsCardTemplate from "./dev-to-post-card-template.js";
+import { fetchData } from "../../service/api.js";
+import endpoint from "../../service/config.js";
+
+const devToCardsContainer = document.querySelector('.posts__dev-to__cards');
 
 const populateCards = (item) => {
     const article = document.createElement('article');

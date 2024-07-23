@@ -1,8 +1,8 @@
-import { playOnProgressBarAnimation } from "../components/progress-bar.js";
-import githubSection from "../components/github-section.js";
-import aluraSection from "../components/alura-section.js";
-import { getRandomUrlSource } from "../components/site-iframe.js";
-import devToPostSection from "../components/dev-to-section.js";
+import playOnProgressBarAnimation from "../components/progress-bar/index.js";
+import githubSection from "../components/github-section/index.js";
+import aluraSection from "../components/alura-section/index.js";
+import devToPostSection from "../components/dev-to-section/index.js";
+import liveAppsRandomly from "../components/live-apps/index.js";
 
 const handleLoad = async () => {
     await githubSection();
@@ -10,7 +10,7 @@ const handleLoad = async () => {
     await aluraSection();
     
     setTimeout(playOnProgressBarAnimation, 5 * 100);
-    getRandomUrlSource();
+    liveAppsRandomly();
 }
 
 window.addEventListener('load', handleLoad);

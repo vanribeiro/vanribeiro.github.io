@@ -1,8 +1,8 @@
-import endpoint from "../service/config.js";
-import { fetchData } from "./../service/api.js";
-import { instagramItemTemplate } from "./../templates/index.js";
-import { instagramListContainer } from "./elements.js";
+import endpoint from "../../service/config.js";
+import { fetchData } from "../../service/api.js";
+import { instagramItemTemplate } from "./instagram-item-template.js";
 
+const instagramListContainer = document.querySelector('.instagram-posts__list');
 
 const populateCards = (item) => {
     const li = document.createElement('li');

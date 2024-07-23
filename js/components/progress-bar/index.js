@@ -8,6 +8,4 @@ const playOnProgressBarAnimation = () => {
     }
 }
 
-export {
-    playOnProgressBarAnimation
-}
+export default playOnProgressBarAnimation;

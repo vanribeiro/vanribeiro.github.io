@@ -1,12 +1,13 @@
-import { fetchData } from "../service/api.js";
-import endpoint from "../service/config.js";
-import { aluraStudyngTemplate } from "./../templates/index.js";
-import { aluraCardContainer } from "./elements.js";
+import { fetchData } from "../../service/api.js";
+import endpoint from "../../service/config.js";
+import aluraProgressCourseTemplate from "./alura-progress-course-template.js";
+
+const aluraCardContainer = document.querySelector('.course-in-progress__all-items');
 
 const populateCards = (item) => {
     const article = document.createElement('article');
     article.classList.add('course-in-progress__item');
-    article.innerHTML = aluraStudyngTemplate(item.name, item.progress, item.slug);
+    article.innerHTML = aluraProgressCourseTemplate(item.name, item.progress, item.slug);
     aluraCardContainer.append(article);
 }
 

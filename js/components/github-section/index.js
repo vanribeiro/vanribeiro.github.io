@@ -1,7 +1,8 @@
-import { githubCardRepoTemplate } from "./../templates/index.js";
-import { fetchData } from "./../service/api.js";
-import { githubCardsContainer } from './elements.js';
-import endpoint from "../service/config.js";
+import githubCardRepoTemplate from "./github-card-repo-template.js";
+import { fetchData } from "../../service/api.js";
+import endpoint from "../../service/config.js";
+
+const githubCardsContainer = document.querySelector('.github-repos__cards');
 
 const populateCards = (item) => {
     const article = document.createElement('article');
