@@ -1,8 +1,10 @@
 const footerPages = document.querySelector('footer');
 
+const date = new Date();
+
 const template = `
     <p>
-        © 2022 - 2024 <a class="link" href="mailto:vanribeiro.dev@gmail.com" rel="noreferrer noopener"
+        © 2022 - ${date ? date.getFullYear() : '2024'} <a class="link" href="mailto:vanribeiro.dev@gmail.com" rel="noreferrer noopener"
             target="_blank">vanessa ribeiro</a>
     </p>
 `;
