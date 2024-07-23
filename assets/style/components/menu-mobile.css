@@ -9,7 +9,7 @@
 }
 
 .menu-mobile__close-button-container{
-    margin: 20px auto;
+    margin: 16px auto 8px auto;
     height: 32px;
     display: flex;
     justify-content: flex-end;
