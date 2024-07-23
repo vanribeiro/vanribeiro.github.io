@@ -1,0 +1,14 @@
+.posts__dev-to__footer{
+    width: 100%;
+    text-align: center;
+    margin-top: 16px;
+}
+
+.posts__dev-to__footer a{
+    font-size: 0.875em;
+    color: var(--font-text);
+}
+
+.posts__dev-to__footer a:hover{
+    color: var(--hover-text-color);
+}

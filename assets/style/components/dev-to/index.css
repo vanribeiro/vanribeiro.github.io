@@ -1,0 +1,47 @@
+.posts__dev-to__cards{
+    margin-top: 16px;
+}
+
+.posts__dev-to__title{
+    font-weight: 400;
+}
+
+.posts__dev-to__title i{
+    padding-right: 4px;
+}
+
+@media screen and (max-width: 767px){
+    .posts__dev-to__card{
+        margin-bottom: 24px;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .posts__dev-to__cards{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 5%;
+    }
+}
+
+@media screen and (min-width: 1200px){
+
+    .posts__dev-to{
+        grid-column: 1 / span 2;
+    }
+
+    
+    .posts__dev-to{
+        margin-top: 24px;
+    }
+    
+    .posts__dev-to__cards{
+        margin-top: 8px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 3%;
+
+    }
+
+}
