@@ -1,6 +1,7 @@
 import { devToPostsCardTemplate } from "../templates/index.js";
-import { fetchDevToData } from "../service/api.js";
+import { fetchData } from "../service/api.js";
 import { devToCardsContainer } from './elements.js';
+import endpoint from "../service/config.js";
 
 const populateCards = (item) => {
     const article = document.createElement('article');
@@ -19,8 +20,11 @@ const populateCards = (item) => {
 }
 
 const devToPostSection = async () => {
-    return await fetchDevToData()
-        .then(result => result.data.map(item => populateCards(item)));
+    return await fetchData(endpoint.DEV_TO_POSTS_SUMMARY, '?collection=progresso')
+        .then(data => {
+            const { result } = data;
+            return result.data.slice(0, 4).map(item => populateCards(item))
+        });
 }
 
 export default devToPostSection;

@@ -1,6 +1,7 @@
 import { githubCardRepoTemplate } from "./../templates/index.js";
-import { fetchGithubReposData } from "./../service/api.js";
+import { fetchData } from "./../service/api.js";
 import { githubCardsContainer } from './elements.js';
+import endpoint from "../service/config.js";
 
 const populateCards = (item) => {
     const article = document.createElement('article');
@@ -25,9 +26,12 @@ const sortByLastestRepoUpdates = (a, b) => {
 }
 
 const githubSection = async () => {
-    return await fetchGithubReposData()
-        .then(data => data.sort(sortByLastestRepoUpdates)
-        .slice(0, 4).map(item => populateCards(item)));
+    return await fetchData(endpoint.GITHUB, '?sort=updated&direction=desc')
+        .then(data => {
+            const { result } = data;
+            result.sort(sortByLastestRepoUpdates)
+            .slice(0, 4).map(item => populateCards(item))
+        });
 }
 
 export default githubSection;
