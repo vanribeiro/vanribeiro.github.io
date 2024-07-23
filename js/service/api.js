@@ -1,7 +1,21 @@
-import { URL_BASE_API_ALURA, URL_BASE_API_GITHUB } from "./config.js";
+import { 
+    URL_BASE_API_ALURA, 
+    URL_BASE_API_GITHUB, 
+    URL_BASE_API_DEV_TO_SUMMARY 
+} from "./config.js";
+
+/** 
+ * @todo: DRY - refactor this function to use a generic fetch function
+ */
 
 const fetchGithubReposData = async () => {
     const response = await fetch(`${URL_BASE_API_GITHUB}?sort=updated&direction=desc`);
+    const data = await response.json();
+    return data;        
+}
+
+const fetchDevToData = async () => {
+    const response = await fetch(`${URL_BASE_API_DEV_TO_SUMMARY}`);
     const data = await response.json();
     return data;        
 }
@@ -19,6 +33,7 @@ const fetchAluraDashboardData = async () => {
 }
 
 export {
+    fetchDevToData,
     fetchGithubReposData,
     fetchInstagramMediaData,
     fetchAluraDashboardData

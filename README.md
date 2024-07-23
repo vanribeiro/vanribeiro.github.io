@@ -1,34 +1,7 @@
-# Site portfolio - 2022
+# Site portfolio 
 
-## Fases
+- Protótipo: [Link do Layout](https://www.figma.com/file/1Y7L3A6rmKyWwLMCxHQGTU/Meu-Site-Portfolio---2022?node-id=12%3A235)
 
-Quebrei a entrega deste portfolio em fases:
-- Fase 00: Desenhar novas telas
-- Fase 01: Home
-- Fase 02: Commits
-- Fase 03: Contatos
-
-### Fase 00 - Desenhar novas telas:
-
-*status*: Parcialmente finalizada
-
-- Desenhei novas telas.
-- [Link do Layout](https://www.figma.com/file/1Y7L3A6rmKyWwLMCxHQGTU/Meu-Site-Portfolio---2022?node-id=12%3A235)
-- Ainda falta desenhar a tela de Contatos
-
-### Fase 01 - Home:
-
-*status*: Finalizada
-
-### Fase 02 - Commits:
-
-*status*: Finalizada
-
-### Fase 03 - Contatos:
-
-*status*: Não iniciada
-
-Falta: desenhar tela 
 
 ## Tecnologias
 
@@ -45,6 +18,7 @@ Falta: desenhar tela
 ### Ferramentas
 - Figma
 - VS Code
+- GitHub Pages
 
 ## Libs, Plugins e Frameworks
 
@@ -54,12 +28,7 @@ Falta: desenhar tela
 
 ## Back-end Dessa aplicação
 
-- [Repositório](https://github.com/vanribeiro/vanribeiro-github-io-backend)
-
-## Ideias:
-    - Adicionar formulário de contato, usando uma api para formulário. 
-        - [Formspark](https://formspark.io/);
-        - Criar uma API para receber estes dados
+- Repositório: [vanribeiro-github-io-backend](https://github.com/vanribeiro/vanribeiro-github-io-backend)
 
 ## Posts
 
