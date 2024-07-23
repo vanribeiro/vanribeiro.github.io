@@ -79,7 +79,7 @@ const topMenuList = () => {
                 <a class="header-page__link" href="/">Home</a>
             </li>
             <li class="header-page__list-item">
-                <a class="header-page__link" href="/paginas/commits.html">Commits</a>
+                <a class="header-page__link" href="/paginas/updates.html">Atualizações</a>
             </li>
         </ul>
     `;
@@ -93,12 +93,18 @@ const menuMobile = () => {
             </span>
         </div>
         <div class="menu-mobile__container this-container">
+            <div class="header-page__logo--mobile">
+                <a href="/">
+                    <h3 class="header-page__logo__title">vanessa ribeiro</h3>
+                    <h4 class="header-page__logo__subtitle">front-end developer</h4>
+                </a>
+            </div>
             <ul class="menu-mobile__list">
                 <li class="menu-mobile__list-item">
                     <a class="menu-mobile__link" href="/">Home</a>
                 </li>
                 <li class="menu-mobile__list-item">
-                    <a class="menu-mobile__link" href="/paginas/commits.html">Commits</a>
+                    <a class="menu-mobile__link" href="/paginas/updates.html">Atualizações</a>
                 </li>
             </ul>
             <ul class="menu-mobile__icons-list">

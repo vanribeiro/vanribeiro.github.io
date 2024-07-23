@@ -1,4 +1,4 @@
-import { URL_BASE_API, URL_BASE_API_GITHUB } from "./config.js";
+import { URL_BASE_API_ALURA, URL_BASE_API_GITHUB } from "./config.js";
 
 const fetchGithubReposData = async () => {
     const response = await fetch(`${URL_BASE_API_GITHUB}?sort=updated&direction=desc`);
@@ -13,9 +13,9 @@ const fetchInstagramMediaData = async () => {
 }
 
 const fetchAluraDashboardData = async () => {
-    const response = await fetch(`${URL_BASE_API}/api/estudando-na-alura`);
-    const data = await response.json();
-    return [ response, data ];        
+    const response = await fetch(`${URL_BASE_API_ALURA}?collection=progresso`);
+    const result = await response.json();
+    return [ response, result ];        
 }
 
 export {
