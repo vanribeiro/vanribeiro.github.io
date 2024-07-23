@@ -9,7 +9,7 @@ function getRandomNumber(min, max) {
     return Math.floor(Math.random() * (MAX - MIN) + MIN);
 }
 
-function getRandomUrlSource () {
+function liveAppsRandomly () {
     const urlDictionarySize = Object.keys(urlDictionary).length;
     const randomUrl = urlDictionary[getRandomNumber(0, urlDictionarySize)];
 
@@ -23,6 +23,4 @@ function getRandomUrlSource () {
     span.textContent = randomUrl.title;
 }
 
-export {
-    getRandomUrlSource
-}
+export default liveAppsRandomly;

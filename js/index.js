@@ -1,5 +1,5 @@
-import footer from "./components/footer.js";
-import menu from "./components/menu.js";
+import footer from "./components/footer/index.js";
+import menu from "./components/menu/index.js";
 import openMenuMobile from './handlers/menu-mobile.js';
 
 window.addEventListener('load', () => {
