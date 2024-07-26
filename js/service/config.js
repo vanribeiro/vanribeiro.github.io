@@ -1,7 +1,3 @@
-/**
- * @todo: refactor endpoints with dynamic paths 
- */
-
 const URL_BASE_API = 'https://vanribeiro-github-io-backend.vercel.app/api';
 const URL_BASE_API_GITHUB = 'https://api.github.com/users/vanribeiro/repos';
 

@@ -32,7 +32,7 @@ const aluraSection = async () => {
 
             isEmpty(result)
             ? setMessageWhenNoCourseIsInProgress()
-            : result.data.map(item => populateCards(item));
+            : result.data.slice(0, 3).map(item => populateCards(item));
 
             return response;
         });
