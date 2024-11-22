@@ -11,10 +11,11 @@ const populateCards = (item) => {
     aluraCardContainer.append(article);
 }
 
-const setMessageWhenNoCourseIsInProgress = () => {
+const setMessageWhenNoCourseIsInProgress = (errors) => {
+    const textMessage = errors.length > 0 ? errors[0]: 'nenhum curso encontrado';
     const message = document.createElement('div');
     const text = document.createElement('p');
-    const textNode = document.createTextNode('nenhum curso no momento');
+    const textNode = document.createTextNode(textMessage);
     message.classList.add('status-message');
     message.classList.add('status-message--no-courses-in-progress');
     aluraCardContainer.append(message);
@@ -25,13 +26,12 @@ const setMessageWhenNoCourseIsInProgress = () => {
 const aluraSection = async () => {
 
     const isEmpty = (data) => data.length === 0 || data === undefined || data === null;
-
     return await fetchData(endpoint.ALURA, '?collection=progresso')
-        .then(data => {
+    .then(data => {
             const { response, result } = data;
-
-            isEmpty(result)
-            ? setMessageWhenNoCourseIsInProgress()
+        
+            isEmpty(result.data)
+            ? setMessageWhenNoCourseIsInProgress(result.errors)
             : result.data.slice(0, 3).map(item => populateCards(item));
 
             return response;
